@@ -2,7 +2,7 @@
 
 OLDCAT= --catalog-xml caro2/catalog-v001.xml
 
-all: caro.owl caro-with-annotations.owl all_imports
+all: caro.owl caro-with-annotations.owl all_imports release/caro.owl
 
 caro.owl: caro2/caro_2.owl
 	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
@@ -10,7 +10,7 @@ caro.owl: caro2/caro_2.owl
 caro-with-annotations.owl: caro2/caro_2-dev.owl
 	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
 
-all_imports: imports/cl_import.owl imports/chebi_import.owl imports/ncbitaxon_import.owl imports/pco_import.owl imports/pato_import.owl imports/ro_import.owl
+all_imports: imports/cl_import.owl imports/chebi_import.owl imports/ncbitaxon_import.owl imports/pco_import.owl imports/pato_import.owl imports/ro_import.owl imports/go_import.owl
 
 imports/cl_import.owl: caro2/imports/CL_import.owl
 	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
@@ -27,3 +27,5 @@ imports/pato_import.owl: caro2/imports/PATO_import.owl
 imports/ro_import.owl: caro2/imports/RO_imports.owl
 	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
 
+release/caro.owl: caro.owl
+	ontology-release-runner --catalog-xml catalog-v001.xml --reasoner hermit --outdir release $<
