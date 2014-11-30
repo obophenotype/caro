@@ -7,6 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/caro-dev.owl>
 Import(<http://purl.obolibrary.org/obo/caro.owl>)
+Import(<http://purl.obolibrary.org/obo/caro/caro_bridge.owl>)
 Annotation(<http://purl.obolibrary.org/obo/IAO_0000116> "This caro2-dev.owl layer holds several annotation properties for use in the caro2 review and rafactoring process to prepare for release.  It imports caro2.owl, where all actual modeling and annotations for general consumption should live.
 
 'transferred_google_doc_comment':

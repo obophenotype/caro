@@ -10,7 +10,11 @@ caro.owl: caro2/caro_2.owl
 caro-with-annotations.owl: caro2/caro_2-dev.owl
 	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
 
+caro_bridge.owl: caro2/CARO_bridge.owl
+	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
+
 all_imports: imports/cl_import.owl imports/chebi_import.owl imports/ncbitaxon_import.owl imports/pco_import.owl imports/pato_import.owl imports/ro_import.owl imports/go_import.owl
+
 
 imports/cl_import.owl: caro2/imports/CL_import.owl
 	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@

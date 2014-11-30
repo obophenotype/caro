@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro.owl" uri="caro.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/caro_bridge.owl" uri="caro_bridge.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/pr_import.owl" uri="imports/pr_import.owl"/>
