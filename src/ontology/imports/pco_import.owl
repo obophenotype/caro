@@ -1,0 +1,22 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/caro/imports/pco_import.owl.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/pco.owl/pco_0000001>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/pco.owl/pco_0000001> "A collection of organisms, all of the same species, that live in the same place."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/pco.owl/pco_0000001> "ISBN:0878932739")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/pco.owl/pco_0000001> "biological population"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/pco.owl/pco_0000001> "It is sometimes difficult to define the physical boundaries of a population. In the case of sexually reproducing organisms, the individuals within a population have the potential to reproduce with one another during the course of their lifetimes. 'Community', as often used to describe a group of humans, is a type of population. Classes for population already  exist in IDO ('organism population', IDO_0000509) and OBI ('population', OBI_0000181). The definitions should be standardized across ontologies and only one term used."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/pco.owl/pco_0000001> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
+)

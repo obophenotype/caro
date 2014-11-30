@@ -1,0 +1,257 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/caro-dev.owl>
+Import(<http://purl.obolibrary.org/obo/caro.owl>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000116> "This caro2-dev.owl layer holds several annotation properties for use in the caro2 review and rafactoring process to prepare for release.  It imports caro2.owl, where all actual modeling and annotations for general consumption should live.
+
+'transferred_google_doc_comment':
+This annotation property holds any important notes that have been transferred in to the owl file from the original caro review google doc here: https://docs.google.com/document/d/1mFU72xoO7YU4_72e0_Uros-n5MD9jJGeNhKmqt4l8zw/edit
+
+'ODG_reviewer_comment':
+This annotation property holds any additional reviewer comments from the OHSU Ontology Devleopment Group.  Many of these can also be found in the google doc here:
+https://docs.google.com/document/d/1S38uzqKgvfHwSibzpVp-JuDOmjlK90dEZg3fkn5JLag/edit
+
+-----------
+
+In addition to the class specific comments in this documentation, the following general issues were raised in the original CARO2 google doc:
+
+1. NOTES REGARDING ORGAN 
+Organ - define in terms of type of boundary?  Bring in function too?
+
+MH: I think so.
+
+DOS: From FUNCARO paper:  
+label: organ 
+definition: “A multicellular anatomical structure that is largely delimited by a morphological boundary and has parts that collectively function in some physiological process.” 
+SubClassOf: ‘multicellular anatomical structure’ 
+SubClassOf: has_function some (realized_by only ‘multicellular organismal process’
+
+2. NOTES REGARDING FUNCARO
+ MH: I think in the interest of reducing confusion, we should have a caro 2.0 release that includes the funcaro stuff- I'd rather have them bundled together (can keep different namespace, slim or whatever if that is helpful, but just want the CARO2.0 file to contain the functionally defined classes).
+
+Some excerpts form the FUNCARO paper are also in the google doc, and comments on this material.  See the google doc for more here.
+https://docs.google.com/document/d/1mFU72xoO7YU4_72e0_Uros-n5MD9jJGeNhKmqt4l8zw/edit#
+
+3. For CARO 2 to succeed where the original has failed:
+
+(a)  CARO 2 needs clear definitions made for biologically defensible reasons or to ensure good modeling practice.  The distinctions made in definitions must be readily understandable by biologists and commonly distinguishable: classification depending on criteria for which little data exists should be avoided.  
+(b) CARO 2 needs formal definitions so that auto-classification by reasoners can be used in place of hand classification.
+(c) CARO 2 needs built-in error checking.   If ontology editors are to stand a chance of using CARO 2  classes consistently, they need a system of automated consistency checks. In practice this means disjointness declarations and suitable domain and range constraints. It also means that they need to be importing upper ontology structures and relations rather than trying to replicate them as has generally been the case for CARO.")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0002009>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000001>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000002>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000003>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000004>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000005>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000006>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000007>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000008>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000007> "Usage of immaterial entity is quite variable and should be addressed."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000007> "We have a problem!  We classify an immaterial anatomical entity as a site, but under it we have 0,1,2 and 3D immaterial entities.   But this is one of the places where BFO 1.1 is known to be broken.  We can't use spatial regions from BFO 1.1 - not independent continuants.  Don't move when you do..    BFO 2.0 has immaterial entity (http://purl.obolibrary.org/obo/BFO_0000141) so we could use this).  This was something I hoped would be fixed in 1.2.
+
+Any suggestions for what to do.  Use BFO 2 in this case?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000007> "Needs a logical definition.  Would be facilitate if we had an 'immaterial entity' class.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000010> "I think it would be great to use different words than \"surfaces\" for referring surfaces of anatomical structures in the definition. I mean, surfaces of anatomical structures are themselfs anatomical surfaces. 
+I do like better the definition created by David for arthro where anatomical surface is an anatomical boundary: \"A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment.\"istvan.miko@gmail.com
+I think plane should be a different class or at least it should not be the subclass of anatomical surface. 
+I think these structures have similar relationships than anatomical line vs distance. In the first cases immaterial entities are adjacent or corresponding to the boandary of material anatomical entities (i.e. there is at least one adjacent anatomical structure) whereas in the other cases not. istvan.miko@gmail.com
+")
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000010> <http://purl.obolibrary.org/obo/CARO_0000007>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0001013> "A 2D anatomical entity that has no 3D projection.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0001013> "The midline plane that bissects a human body into left and right halves.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CC:DOS") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0002009> "The external boundary of a region of integument with the environment.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0002009> "integumental surface"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000000> "caro_developer_note")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000000> "place to record ongoing modeling questions, issues, alternative approaches, and other 'action items' to be addressed by developers, and meant for eyes of core developers only. These annotations should not be visible for end users or other developers outside the current ontology project (as opposed to 'IAO:editor notes' which are more concrete and visible to all). This annotation property should live in a separate layer reserved for 'developer-only' annotations and comments.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000001> "used to flag and place for explanation of issues in need of developer attention")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000001> "caro_developer_action_item")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000001> <http://purl.obolibrary.org/obo/REO_0000000>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000002> "caro_developer_question")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000002> "used to record specific questions about a class or axiom in the ontology, to be followed up on my developers")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000002> <http://purl.obolibrary.org/obo/REO_0000000>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000003> "FLAG to record classes where we have issues or suggestions to feedback to an external ontology regarding a class imported into the home/current ontology (ie CARO). Most often used to address cases where imported term definitions are felt to be unclear, incomplete, erroneous, or inconsistent.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000003> "caro_requires_feedback_to")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000003> <http://purl.obolibrary.org/obo/REO_0000000>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000004> "FLAG used to indicate that a class is temporary or out of scope for the core ontology being developed, and will be modified or replaced by a class imported from an appropriate ontology.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000004> "caro_placeholder_for")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/REO_0000000>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000005> "caro_review")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000005> "Annotation to house reviewer comments from different soruces during review of ReO forFall 2012 pre-release.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000006> "transferred_google_doc_comment")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000006> "Annotation to record notes and comments from the CARO 2.0 google doc. All relevant notes/comments were transferred into caro-dev.owl using this annotation property on 10-17-12 by MHB.
+
+https://docs.google.com/document/d/1mFU72xoO7YU4_72e0_Uros-n5MD9jJGeNhKmqt4l8zw/edit#")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/REO_0000005>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000007> "a reviewer comment from an OHSU Ontology Development Group (ODG) member.   For tracking provenance, should be preceded by initials of the reviewer where applicable.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000007> "ODG_reviewer_comment")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/REO_0000005>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000008> "caro_obsolete_or_resolved_comment")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000008> <http://purl.obolibrary.org/obo/REO_0000000>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0010000> "1. With this clarified (see comment on portion of organism substance) we can now start incorporating biologically specific differentia, the most important of which is the cellularization state (phrase better?) of the structure.  -> cell as fundamental in biology.  Here we diverge from CARO, classifying many children of anatomical structure in CARO under ‘multicellular anatomical structure’.
+
+2. name: multicellular anatomical structure
+revised definition: “A maximally connected anatomical structure that has more than one cell as a part.”
+OWL def: EquivalentTo ‘anatomical structure that *has_component* min 2 cell’
+
+* Comment - MH: another relation that we really need to agree on within BFO/RO (or define ourselves....) What is the status of this one?
+DOS:  Have added to ro.owl as a non-transitive child of has_part. Stefan Schulz defines has_granular_part in more than one paper. This is probably suitable, although may come with some unwanted baggage.*")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000009> "IM: Is the intersection of two distances (I am still not sure if distances cann be considered as anatomical lines) an anatomical point? istvan.miko@gmail.com
+DOS: Seems reasonable.  Chris also suggests using for refernce points on the surface of anatomical strucures used for specifying anatomical lines. ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0001009> "DOS: I'm skeptical of this term as I think it would be hard to maintain classification under it without automation.  Perhaps: 'anatomical structure' that has_part some 'anatomical space' ?
+
+Also - Presumably a single cell could be a chamber - or a tissue (see epithelial sac / epithelial tube).  Not clear to me that such an abstract class is useful.  
+
+See https://code.google.com/p/caro2/issues/detail?id=14&thanks=14&ts=1362399847 for more discussion.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000013> "MHB: replace with CL:native cell?  Should unicellular organism infer as a subclass here (would assume that CARO:unicellular organism is restricted to those in environment)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000043> "[Use of PATO differentia for relative arrangement of cells (discussing this with George):
+thelial?
+mesenchymal?
+
+Use of PATO shape differentia - e.g.- for epithelial tubes.]")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000032> "1. name: organism subdivision
+original definition: \"Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.\" [CARO:MAH]
+is_a: CARO:0000003 ! anatomical structure
+
+However, there is no guarantee that an organism subdivision is a connected structure.  If I slice out an abdominal segment from an adult fly, not all of the structures will form a connected whole.  We should therefore move ‘organism subdivision’ to be a sibling of ‘anatomical structure’ and ‘anatomical group’. {MJY - AGREED. Also - “primary” needs clarification- it really is meaningless in our experience.} MH: agree too. word primary there to help annotators and not really part of definition. move to comment and explain would be more helpful.
+
+One problem here is formally defining “primary”.The key axiom is that “the mereological sum of [organism subdivision]s is the whole organism”. There may be many different ways to slice up an organism. A magician may slice up his assistant into an anterior portion and posterior portion. An aS1={ap,pp}natomist would slice up a person into thorax, abdomen and appendages. Real, i.e. S2={t,a,app}lyWe cannot mix and match, or the axiom would be violated - either all the members of S1 are subdivisions, or all the members of S2 are subdivisions, but not both.  Choice of parcelation schemes is ultimately arbitrary. My choice would be to define organism subdivision weakly, i.e. “ , organism subdivision should be relational, i.e. relative to a particular parcelation scheme.  Choice of parcellation scheme is ultimately arbitrary.  There is nothing inherently wrong with this, but the definition should make this clear.
+
+name: organism subdivision
+revised definition: \"Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.\" [CARO:MAH]
+is_a: material anatomical entity
+
+----
+
+2. CM: organism subdivision - what exactly does “primary” mean in this definition: “Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.” This ended up as the parent of appendage in our candidate common arthropod anatomy ontology, but we’re not convinced it’s useful (yet). (- A. Deans)
+
+DOS:  Agree 'primary' not good here. Here's a proposed def from the end of the Arthropod working group notes: 
+\"A major subdivision of the whole organism that consists of parts of multiple organ systems, largely surrounded by integument.\"
+
+We can probably improve on the 'largely surrounded by'. Maybe specifying that the integumental component must be a single contiguous piece? https://docs.google.com/document/d/1F999aHYrJo6irGIjCl44H_k0KHFoLHHk1qPSmdvRg-E/edit?hl=en_US")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000054> "Can we formalise the difference between connected and non-connected?  If so, suggest we do so by specifying formal definition in PATO and using PATO class here - hiding complexity for editors and users.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000040> "1. MH: There are lots of cases where what we might call an acellular structure contains cells as part of its development or processes that it is involved in. For example, a basal lamina with a few cells. I find this classes not very helpful and the distinction arbitrary....
+DOS: Disagree. For the developmental case - the developing struc is not acellular - just the mature one. For borderline cases we can simply consider the cells to be located in the structure, not part of it.
+
+2. name: acellular anatomical structure
+revised definition: “A maximally connected anatomical structure that has no cells as a part.”
+OWL def: Equivalent_to ‘has_component exactly 0 cell and has_component exactly 0 ‘cell component’
+
+MH: see above comment... there are so many exceptions.
+DOS: But if we formalize it? See my comment on your comment above.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/REO_0000005> "Is the cuticle, a shell of a mollusc or an exuvia not an anatomical structure? istvan.miko@gmail.com") <http://purl.obolibrary.org/obo/REO_0000008> <http://purl.obolibrary.org/obo/CARO_0000006> "MHB: logical definition seems necessary but not sufficient.  Does not cover things like feces/urine, and would include molecules and part of molecules that are below the granularity cutoff for anatomical entities.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/BFO_0000050> "MH We need to determine how to handle the old part_of relation, being used in caro mostly similar to 'part of at some time'")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000024> "DOS: Perhaps time to ditch or simplify the caro1 formulation inherited from the FMA.  One possibility that appeals to me is to use boundary type as a differentium for organ - e.g. has_boundary some 'anatomical surface'")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/RO_0003000> "This may not quite be sufficient, as would be good to have a relation between structures and the things they produce and then secrete.  So A -> B => B not part_of A.  ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000003> <http://purl.obolibrary.org/obo/CHEBI_25367> "CHEBI: Need to make biomacromolecule a subclass of molecule, for this modeling to make sense (e.g. to exclude molecules and biomacromolecules as types of anatomical entities).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000014> "1. name: cell component
+revised definition: “A maximally connected anatomical structure that  is part of a cell and that has a granularity level equal to that of a protein complex or higher.”
+OWL def: SubClassOf proper_part_of some cell
+
+2. MH:  lets just change to the GO term. may need to reconcile the extracellular class.
+DOS: 'cell part' is good. Because of the extracellular matrix issue, I think this is a sub-type of GO 'cellular component'.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0001008> "DOS: Nothing in the definitions of acellular anatomical structure or anatomical substance specifies that they must be gross.  Is a microlitre of urine a gross anatomical structure?  see https://code.google.com/p/caro2/issues/detail?id=13&thanks=13&ts=1362398915 for further discussion.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0002006> "A weak definition.  Needs serious work!")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000013> "CL:native cell?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000003> "MHB:  *****Previously, 'part of some organism' axiom was inherited from 'material anatomical entity'.  now that we have changed the logical def of material anatomical entity, we may need to assert here that anatomical structures are part of organisms at all times.  Or perhaps this is not the case - ie might some anatomical entities that are *produced by*  organisms be considered 'structures' if they have a defined shape? Such as a kidney stone?  Or would a kidney stone be a material anatomical entity but not a structure because its 3D shape is not 'designed/defined by the organisms genome'? *****
+
+This leads to a need to better define or refine the treatment of 3-D shape - to perhaps reference the notion of a designed shape rather than just any shape?  ie a kidney stone has a 3-D shape, but this shape is random and not designed.
+
+MH: Are all anatomical structures part of or located in a single organism? What about fungal colonies that have anatomical structures comprised of more than one organism? or dicty fruiting bodies?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/PATO_0000001> "MHB: there are still two quality classes - one a sibling of entity (PATO), and one a child of SDC (BFO).  Reason for this?
+")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "-The concept that is used in the anatomical description of an organism-istvan.miko@gmail.com")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000054> "The definition of anatomical group is frankly unusable.  There simply too much to keep track of and it contains terms that are not defined elsewhere in CARO. For example, nowhere in CARO is there a definition of ‘multi-tissue aggregate’, or for that matter *‘organ’*.
+
+* Comments AD: seems to be a major oversight of CARO
+DOS: Not having this term was actually the result of weeks of argument (!)
+MH: yeah- problem was largely that the label is used for many things, so no one could agree on it. I think it would be fine to use it, as long as we apply it given its definition.(maybe if the biologists can agree on that we can finally move forward...)*
+
+Given this, perhaps the best we can do is look at its usage.  This shows that it has generally [Is it really majority? Check] been used for collections of **disconnected** structures.  This is most apparent for some terms of its subclass ‘anatomical system’.  For example, the zebrafish anatomy ontology has under this term:
+
+**Comments - 'DOS: Disconnected' is quite a simple idea and not at all vague. Perhaps language is making it sound more complicated than it is.  See cartoon here for instances of connected, non-connected and non-connected clustered structures: https://docs.google.com/drawings/d/1viRoiV3qY2SER0nfFoky2En2ZZ0IMNtS3IDIRj7X8H8/edit **
+
+**immune system
+hematopoietic system
+endocrine system**
+
+*** Comments - MH: these were all added as group because they are disconnected. However, we all know that they can easily be classfiied by function.
+DOS: Indeed, but physically, each is made up of lots of disconnected bits.***
+
+All these terms clearly refer to disconnected systems. {How so- cells can be shared across systems, in nearly all cases I suspect they are connected at some level - MJY}  Also, for none of these would it make sense to say that it ‘has inherent 3D shape’, as stipulated in the definition of ‘anatomical structure’. {MJY- I agree - doesn’t inherent 3D shape come at a higher level with mass? everything that has mass has some definition of 3D shape?}  Is an instance of an ‘anatomical structure’ a single connected structure? I believe this was the intention,  although it is not clear from the definition.
+
+A simpler secondary distinction for material anatomical entity would be on the basis of whether an instance is a single connected structure or a set of disconnected structures.  In BFO, this latter class corresponds to ‘scattered aggregate’.
+
+Why is it useful to make the distinction between scattered aggregates and connected structures?  {MJY - in a “complete” ontology there is no point IMO- relations/properties of indiviudal components will provide the necessary “connect” -> i.e. they will be reasoned out/discoverable}
+[One reason:  Excessive use of groups => temptation to use partonomy (limited opportunity to formalize) in place of classification (lots of ways to formalize).  E.g.- see ‘set of’ terms.]
+
+-----
+
+{MJY - I don’t like 'disconnected'} 
+MAH: perhaps we can add something about classfiication together by function. Q: is this always the case? systems yes, but there are other groups like joints classfied like this. joints can be classfiied in part by function. What else?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
+DOS:  Are you sure these are equivalent?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000014> "GO:cell part")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000003> "name: anatomical structure
+revised definition: \"Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.\" *{what is ‘coordinated expression of the organism's own genome’ we don’t understand the implications of stating this, so make it simpler - i.e. we almost NEVER know if there are other genomes involved - MJY)*
+
+* Comment - DOS: Not entirely happy with this myself - trying to be somewhat conservative with original CARO. But this does serve to differentiate things like bone, muscle, antenna from blood/shit/urine, which are classified under 'portion of organism substance'*")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001010> "MHB: What is the purpose of this class.  And what is the status of virusees/viriods wrt being anatomical entities?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000011> "The old CARO1 def is unclear.  A better approach - perhaps all anatomical systems should be defined functionally, with connected vs disconnected being a differentium? see https://code.google.com/p/caro2/issues/detail?id=6")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000004> "1. CM: this class  presumably includes blood - so blood would not be a tissue (if these were disjoint). likewise dentine?
+
+------
+
+2.  The original definition of ‘portion of organism substance’ contains the restriction that a member of this class must be a “Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances”  The cuticle of an insect certainly seems to fit this definition. It is solid and is produced by the produced by an anatomical structure, the underlying epidermis. But is also has ‘has inherent 3D shape and is generated by coordinated expression of the organism's own genome.’ So,  it makes sense to classify this an anatomical structure.  The definition of ‘organism substance’ therefore requires a negative clause.
+
+(Note - this seems to have been addressed in the definition below)
+
+
+")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000065> "I think \"composed of proteoglycans\" and \"part_of basal membrane\" and \"derived from epithelial cells\" (?i donno if derived_from can be used for an acellular structure that has been produced by a cell) could be added to the definition. istvan.miko@gmail.com")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000004> "Some misgivings about including blood in here.  But difficult to avoid this if using 'inherent 3D structure' as a differentium for disjoint class 'anatomical structure'"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000040> "change logical definition to use has component exactly 0 . . . 
+DOS: Are you sure this is semantically equivalent ?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000012> "MHB: logically define this class asorganism and 'has continuant part at some time' min 2 cell??")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0001000> "name: multi-cell component anatomical structure
+revised definition:  “A maximally connected anatomical structure that has multiple cell components but no whole cells as parts.”
+Examples: a bundle of neuron projections in the brain.; a region neuropil in an arthropod central nervous system; a cluster of neuronal cell bodies”
+OWL def: EqulivalentTo ‘anatomical structure’ that has_component min 2 ‘cell component ‘ and has_component exactly 0 cell’")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000064> "MHB: Unicellular organism should infer as a type of (native) cell? See ReO approach for this.  
+
+Note that this class inherits beong part of or produced by and located in an organism at all times (inherited from material anatomical entity).  Implications of this?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "Can we have a parent class the encompasses the parts of viruses and viroids?")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/REO_0000005> "What do you think about this:
+
+The anatomical structure that is surrounded by membrane and is derived from a cell by cell division.          
+
+where membrane is:
+
+The area that is composed of double layer of lipid molecules.          
+
+lipid molecules can get from one of the chemical ontologies. istvan.miko@gmail.com") <http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000013> "name: cell
+revised definition: “A maximally connected anatomical structure, bounded by a cell membrane and containing chromosomes encoding a whole genome.”
+[Excludes erythrocytes – so should have separate class for these?]
+MH: remember this was intended to be the same term as is in GO and CL. We tried a round of coordination but it didnt’ really happen. We should try again. Same is true for Cell Component below.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000042> "See also https://code.google.com/p/caro2/issues/detail?id=11")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000054> "IM: Sometimes we used anatomical cluster even for connected structures i.e. some tagma is an anatomical cluster that is composed of tagmae. Otherwise, i think we agreed finally, that anatomical clusters simply should be anatomical structures has_part.. components. istvan.miko@gmail.com
+DOS: Note that 'anatomical cluster' is inhertited from CARO1.  Meaning is obscure.  'anatomical group' and its subterm 'clustered anatomical group' are new and, I think, more clearly defined terms.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000048> "How can one organism have male and female sexes? Is it possible to define this organism following the logic of hermaphroditic organism:
+Multi-cellular organism that can produce either male or female gametes.
+istvan.miko@gmail.com")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0010004> "MHB: 
+1. there is asserted multiple inheritance here - asserting organism as a child of 'organism virus or viriod', and anatomical structure. . . is this because viruses and viriods are not considered anatomical  structures?  Why not just define the class 'organism or virus or viriod' as a union, and then assert organism under anatomical structure
+
+2. this class inherits being part of an organism at all times (or being produced by and located in an ortanism at all times) from material anatomical entity . . . implicaitons of this?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000008> "IM: We have considered (perhaps incorrectly) distances also as anatomical lines in HAO. Is the outline of the body an anatomical line? Is the anatomical line than really a border of the 2d projection of a 3d structure? If so, shouldn't be a restriction made that when an anatomical line is given a BSPO \"side\" class or section plane has to be provided? I.e. body streamline is an anatomical line that extends around the boarder of the body and the environment in lateral view. istvan.miko@gmail.com
+DOS: A sensible use of anatomical line would be for a line between two points where these are typically used to measure some aspect of morphology. One could use this to record distance inside OWL by using dataproperties, or outside OWL by using such terms for annotation. Interesting suggestion that line must be related to a plane.  Without this, we have the possibility of lines with 2D projection, just as we have boundaries with 3D projection.  Note - I think it probably should not be used for lines and grooves on the surface of the integument or bone.  These have some (narrow) 2D or 3D extent.")
+)
