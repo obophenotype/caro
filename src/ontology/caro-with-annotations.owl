@@ -55,11 +55,35 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000005>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000006>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000007>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000008>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CARO_0000000> "MB, 10-30-12: Updated logical definition equates anatomical entity to the untion of material and immaterial anatomical entity. Material anatomical entity is logically defined to include material entities that are parts of an organism at all times, and substances produced by an organism that are still located in the organism (with the condition that these are larger than single molecules).  Immaterial anatomical entities are defined as sites that are located in organisms at all times.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "Can we have a parent class the encompasses the parts of viruses and viroids?")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000000> "Notes: [One obvious question to ask is whether we need a root term for CARO at all?  ]
+
+The root term defines the scope of the ontology.  In the jargon of the Basic Formal Ontology (BFO; link), anatomical entities are types of independent continuant, but what distinguishes them from other independent continuants? 
+
+In the current version, it is sufficient to state that an independent continuant is part of an organism (or virus or viroid) in order for it to be an anatomical entity.  Note that the relationship between a material and an immaterial anatomical entity is 'part of', as is the relationship between an organism and any (portion of) organism substance.
+
+--- OLD NOTES ---
+
+an anatomical entity should have the class restriction of being part_of an organism. Being enclosed by the boundary of an organism seems like a necessary condition, but not a sufficient one:  If a swallowed a piece of plastic, or had a piece of shrapnel embedded in my thigh, we wouldn’t consider either to be anatomical entities.  Presumably, the genus of the FMA definition, ‘organismal continuant entity’, is meant to avoid this issue. But this is not defined by the FMA.
+
+Certainly many, perhaps most anatomical entities are either an individual member of a biological species or a structural element of one.  But sweat, saliva and faeces can hardly be considered structural elements of anatomy, but are classified as anatomical entities by by the FMA and were intended to be covered by CARO.
+
+We therefore suggest the following definition:
+(organism or part_of some organism or derives_from some organism) and not (molecule or part_of some molecule)
+The definition of derives_from in RO2005 is subjective - what portion of matter must be inherited? We might use a specific sub-relation that is more inclusive, such that only a small portion of matter be retained, such that feces, urine are anatomical, because they include some portion of matter that came from the organism, whereas a swallowed undigestible piece of plastic that passes through would not. 
+
+MH 10.6.11. I added the class restriction that an antomical entity is part of or located in some organism or virus or virioid. This is slightly different in that it doesn't use the derived relation, and doesn't distinguish poop from the swallowed piece of plastic. It does however, include the immaterial spaces. We can consider something stronger on material anatomical entity?"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "-The concept that is used in the anatomical description of an organism-istvan.miko@gmail.com")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/REO_0000005> "Is the cuticle, a shell of a mollusc or an exuvia not an anatomical structure? istvan.miko@gmail.com") <http://purl.obolibrary.org/obo/REO_0000008> <http://purl.obolibrary.org/obo/CARO_0000006> "MHB: logical definition seems necessary but not sufficient.  Does not cover things like feces/urine, and would include molecules and part of molecules that are below the granularity cutoff for anatomical entities.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CARO_0000006> "MB, 10-30-12: Updated logical definition of material anatomical entity is intended to include material entities that are parts of an organism at all times, and substances produced by an organism that are still located in the organism (with the caveat that these entities are larger than single molecules).")
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000006> <http://purl.obolibrary.org/obo/CARO_0000000>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000007> "Usage of immaterial entity is quite variable and should be addressed."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000007> "We have a problem!  We classify an immaterial anatomical entity as a site, but under it we have 0,1,2 and 3D immaterial entities.   But this is one of the places where BFO 1.1 is known to be broken.  We can't use spatial regions from BFO 1.1 - not independent continuants.  Don't move when you do..    BFO 2.0 has immaterial entity (http://purl.obolibrary.org/obo/BFO_0000141) so we could use this).  This was something I hoped would be fixed in 1.2.
 
 Any suggestions for what to do.  Use BFO 2 in this case?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000007> "Needs a logical definition.  Would be facilitate if we had an 'immaterial entity' class.")
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000007> <http://purl.obolibrary.org/obo/CARO_0000000>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000010> "I think it would be great to use different words than \"surfaces\" for referring surfaces of anatomical structures in the definition. I mean, surfaces of anatomical structures are themselfs anatomical surfaces. 
 I do like better the definition created by David for arthro where anatomical surface is an anatomical boundary: \"A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment.\"istvan.miko@gmail.com
 I think plane should be a different class or at least it should not be the subclass of anatomical surface. 
@@ -147,7 +171,6 @@ OWL def: Equivalent_to ‘has_component exactly 0 cell and has_component exactly
 
 MH: see above comment... there are so many exceptions.
 DOS: But if we formalize it? See my comment on your comment above.")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/REO_0000005> "Is the cuticle, a shell of a mollusc or an exuvia not an anatomical structure? istvan.miko@gmail.com") <http://purl.obolibrary.org/obo/REO_0000008> <http://purl.obolibrary.org/obo/CARO_0000006> "MHB: logical definition seems necessary but not sufficient.  Does not cover things like feces/urine, and would include molecules and part of molecules that are below the granularity cutoff for anatomical entities.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/BFO_0000050> "MH We need to determine how to handle the old part_of relation, being used in caro mostly similar to 'part of at some time'")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000024> "DOS: Perhaps time to ditch or simplify the caro1 formulation inherited from the FMA.  One possibility that appeals to me is to use boundary type as a differentium for organ - e.g. has_boundary some 'anatomical surface'")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/RO_0003000> "This may not quite be sufficient, as would be good to have a relation between structures and the things they produce and then secrete.  So A -> B => B not part_of A.  ")
@@ -168,7 +191,6 @@ This leads to a need to better define or refine the treatment of 3-D shape - to 
 MH: Are all anatomical structures part of or located in a single organism? What about fungal colonies that have anatomical structures comprised of more than one organism? or dicty fruiting bodies?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/PATO_0000001> "MHB: there are still two quality classes - one a sibling of entity (PATO), and one a child of SDC (BFO).  Reason for this?
 ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "-The concept that is used in the anatomical description of an organism-istvan.miko@gmail.com")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000054> "The definition of anatomical group is frankly unusable.  There simply too much to keep track of and it contains terms that are not defined elsewhere in CARO. For example, nowhere in CARO is there a definition of ‘multi-tissue aggregate’, or for that matter *‘organ’*.
 
@@ -229,7 +251,6 @@ OWL def: EqulivalentTo ‘anatomical structure’ that has_component min 2 ‘ce
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000064> "MHB: Unicellular organism should infer as a type of (native) cell? See ReO approach for this.  
 
 Note that this class inherits beong part of or produced by and located in an organism at all times (inherited from material anatomical entity).  Implications of this?")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "Can we have a parent class the encompasses the parts of viruses and viroids?")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/REO_0000005> "What do you think about this:
 
 The anatomical structure that is surrounded by membrane and is derived from a cell by cell division.          
