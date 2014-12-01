@@ -7,6 +7,7 @@ pairwise-disjoint: true
 ontology: CARO
 treat-xrefs-as-equivalent: GO
 ontology: caro
+data-version: releases/2011-12-14
 
 [Term]
 id: CARO:0000000
