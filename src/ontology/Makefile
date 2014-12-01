@@ -1,35 +1,30 @@
-## THIS IS A TEMP MAKEFILE for syncing with old svn repo
+OBO= http://purl.obolibrary.org/obo/
+USECAT= --catalog-xml catalog-v001.xml
 
-OLDCAT= --catalog-xml caro2/catalog-v001.xml
+all: release/caro.owl
 
-all: caro.owl caro-with-annotations.owl all_imports release/caro.owl
-
-caro.owl: caro2/caro_2.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-
-caro-with-annotations.owl: caro2/caro_2-dev.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-
-caro_bridge.owl: caro2/CARO_bridge.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-
-all_imports: imports/cl_import.owl imports/chebi_import.owl imports/ncbitaxon_import.owl imports/pco_import.owl imports/pato_import.owl imports/ro_import.owl imports/go_import.owl
-
-
-imports/cl_import.owl: caro2/imports/CL_import.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-imports/chebi_import.owl: caro2/imports/CHEBI_import.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-imports/ncbitaxon_import.owl: caro2/imports/NCBITaxon_imports.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-imports/go_import.owl: caro2/imports/GO_imports.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-imports/pco_import.owl: caro2/imports/PCO_imports.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-imports/pato_import.owl: caro2/imports/PATO_import.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
-imports/ro_import.owl: caro2/imports/RO_imports.owl
-	owltools $(OLDCAT) $< -o -f ofn $@ && fix.pl $@
+all_ext: all bridge-checks
 
 release/caro.owl: caro.owl
-	ontology-release-runner --catalog-xml catalog-v001.xml --reasoner hermit --outdir release $<
+	ontology-release-runner $(USECAT) --skip-release-folder  --ignoreLock  --reasoner hermit --no-subsets --simple --asserted --outdir release $<
+
+## ----------------------------------------
+## BRIDGES TO OTHER AOS
+## ----------------------------------------
+
+bridge-checks: bridge-check-zfa.txt
+
+bridge-check-%.txt: caro.owl
+	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r hermit -u > $@
+classic-bridge-check-%.txt: caro.owl
+	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --run-reasoner -r elk -u > $@
+
+classic-merge-bridge-%.owl: caro.owl
+	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --merge-imports-closure -o $@
+
+## TODO: this is currently done in a hacky way via the uberon repo
+#bridges/%_bridge.owl:
+#	
+
+bridges/uberon_bridge.owl:
+	owltools $(OBO)/uberon/bridge/uberon-bridge-to-caro.owl  --add-imports-declarations $(OBO)/uberon.owl $(OBO)/caro.owl // --set-ontology-id $(OBO)/caro/$@ -o $@
