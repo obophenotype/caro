@@ -28,3 +28,4 @@ classic-merge-bridge-%.owl: caro.owl
 
 bridges/uberon_bridge.owl:
 	owltools $(OBO)/uberon/bridge/uberon-bridge-to-caro.owl  --add-imports-declarations $(OBO)/uberon.owl $(OBO)/caro.owl // --set-ontology-id $(OBO)/caro/$@ -o $@
+
