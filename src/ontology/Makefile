@@ -17,13 +17,14 @@ bridge-checks: bridge-check-zfa.txt
 bridge-check-%.txt: caro.owl
 	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r hermit -u > $@
 classic-bridge-check-%.txt: caro.owl
-	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --run-reasoner -r hermit -u > $@
+	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --run-reasoner -r elk -u > $@
 
 classic-merge-bridge-%.owl: caro.owl
 	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --merge-imports-closure -o $@
 
 ## TODO: this is currently done in a hacky way via the uberon repo
-## bridges/%_bridge.owl:
+#bridges/%_bridge.owl:
+#	
 
 bridges/uberon_bridge.owl:
 	owltools $(OBO)/uberon/bridge/uberon-bridge-to-caro.owl  --add-imports-declarations $(OBO)/uberon.owl $(OBO)/caro.owl // --set-ontology-id $(OBO)/caro/$@ -o $@
