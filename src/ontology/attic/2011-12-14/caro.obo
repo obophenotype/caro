@@ -4,7 +4,6 @@ saved-by: djs93
 auto-generated-by: OBO-Edit 2.1-beta16
 default-namespace: caro
 pairwise-disjoint: true
-ontology: CARO
 treat-xrefs-as-equivalent: GO
 ontology: caro
 data-version: releases/2011-12-14
