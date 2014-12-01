@@ -5,7 +5,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/caro-bridge-to-zfa.owl>
+Ontology(<http://purl.obolibrary.org/obo/caro/bridges/zfa_bridge.owl>
+Import(<http://purl.obolibrary.org/obo/caro.owl>)
+Import(<http://purl.obolibrary.org/obo/zfa.owl>)
 
 EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/ZFA_0100000>)
 EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/ZFA_0000037>)
