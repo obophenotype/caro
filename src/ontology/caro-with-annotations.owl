@@ -44,18 +44,6 @@ https://docs.google.com/document/d/1mFU72xoO7YU4_72e0_Uros-n5MD9jJGeNhKmqt4l8zw/
 (b) CARO 2 needs formal definitions so that auto-classification by reasoners can be used in place of hand classification.
 (c) CARO 2 needs built-in error checking.   If ontology editors are to stand a chance of using CARO 2  classes consistently, they need a system of automated consistency checks. In practice this means disjointness declarations and suitable domain and range constraints. It also means that they need to be importing upper ontology structures and relations rather than trying to replicate them as has generally been the case for CARO.")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001013>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0002009>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000000>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000001>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000002>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000003>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000004>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000005>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000006>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000007>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000008>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CARO_0000000> "MB, 10-30-12: Updated logical definition equates anatomical entity to the untion of material and immaterial anatomical entity. Material anatomical entity is logically defined to include material entities that are parts of an organism at all times, and substances produced by an organism that are still located in the organism (with the condition that these are larger than single molecules).  Immaterial anatomical entities are defined as sites that are located in organisms at all times.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000005> <http://purl.obolibrary.org/obo/CARO_0000000> "Can we have a parent class the encompasses the parts of viruses and viroids?")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000000> "Notes: [One obvious question to ask is whether we need a root term for CARO at all?  ]
@@ -91,34 +79,46 @@ I think plane should be a different class or at least it should not be the subcl
 I think these structures have similar relationships than anatomical line vs distance. In the first cases immaterial entities are adjacent or corresponding to the boandary of material anatomical entities (i.e. there is at least one adjacent anatomical structure) whereas in the other cases not. istvan.miko@gmail.com
 ")
 SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000010> <http://purl.obolibrary.org/obo/CARO_0000007>)
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001013>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0001013> "A 2D anatomical entity that has no 3D projection.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0001013> "The midline plane that bissects a human body into left and right halves.")
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0002009>))
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CC:DOS") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0002009> "The external boundary of a region of integument with the environment.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0002009> "integumental surface"@en)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000000>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000000> "caro_developer_note")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000000> "place to record ongoing modeling questions, issues, alternative approaches, and other 'action items' to be addressed by developers, and meant for eyes of core developers only. These annotations should not be visible for end users or other developers outside the current ontology project (as opposed to 'IAO:editor notes' which are more concrete and visible to all). This annotation property should live in a separate layer reserved for 'developer-only' annotations and comments.")
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000001>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000001> "used to flag and place for explanation of issues in need of developer attention")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000001> "caro_developer_action_item")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000001> <http://purl.obolibrary.org/obo/REO_0000000>)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000002>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000002> "caro_developer_question")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000002> "used to record specific questions about a class or axiom in the ontology, to be followed up on my developers")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000002> <http://purl.obolibrary.org/obo/REO_0000000>)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000003>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000003> "FLAG to record classes where we have issues or suggestions to feedback to an external ontology regarding a class imported into the home/current ontology (ie CARO). Most often used to address cases where imported term definitions are felt to be unclear, incomplete, erroneous, or inconsistent.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000003> "caro_requires_feedback_to")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000003> <http://purl.obolibrary.org/obo/REO_0000000>)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000004>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000004> "FLAG used to indicate that a class is temporary or out of scope for the core ontology being developed, and will be modified or replaced by a class imported from an appropriate ontology.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000004> "caro_placeholder_for")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/REO_0000000>)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000005>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000005> "caro_review")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000005> "Annotation to house reviewer comments from different soruces during review of ReO forFall 2012 pre-release.")
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000006>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000006> "transferred_google_doc_comment")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000006> "Annotation to record notes and comments from the CARO 2.0 google doc. All relevant notes/comments were transferred into caro-dev.owl using this annotation property on 10-17-12 by MHB.
 
 https://docs.google.com/document/d/1mFU72xoO7YU4_72e0_Uros-n5MD9jJGeNhKmqt4l8zw/edit#")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/REO_0000005>)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000007>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REO_0000007> "a reviewer comment from an OHSU Ontology Development Group (ODG) member.   For tracking provenance, should be preceded by initials of the reviewer where applicable.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000007> "ODG_reviewer_comment")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/REO_0000005>)
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000008>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REO_0000008> "caro_obsolete_or_resolved_comment")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/REO_0000008> <http://purl.obolibrary.org/obo/REO_0000000>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0010000> "1. With this clarified (see comment on portion of organism substance) we can now start incorporating biologically specific differentia, the most important of which is the cellularization state (phrase better?) of the structure.  -> cell as fundamental in biology.  Here we diverge from CARO, classifying many children of anatomical structure in CARO under ‘multicellular anatomical structure’.
@@ -184,6 +184,7 @@ OWL def: SubClassOf proper_part_of some cell
 DOS: 'cell part' is good. Because of the extracellular matrix issue, I think this is a sub-type of GO 'cellular component'.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0001008> "DOS: Nothing in the definitions of acellular anatomical structure or anatomical substance specifies that they must be gross.  Is a microlitre of urine a gross anatomical structure?  see https://code.google.com/p/caro2/issues/detail?id=13&thanks=13&ts=1362398915 for further discussion.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0002006> "A weak definition.  Needs serious work!")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000041> "DOS notes: Legacy term.  FMA defines largely by exclusion, but based on usage it seems to mean something like 'a  connected structure made up of heterologous parts'. It is used especially where some of those parts have fiat boundaries through them - e.g. vertebrate joints - where defining the contribution of the bones involved requires fiat boundaries through those bones.  My worry is that this class could apply to almost anything, and in most cases there will be more useful classifications we could apply too.  So the result will be multiple inheritance for no obvious gain.  However, it has been so widely used that the term is likely to be maintained for the foresable future.  It should probably not have any disjointness axioms associated with it.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000013> "CL:native cell?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000003> "MHB:  *****Previously, 'part of some organism' axiom was inherited from 'material anatomical entity'.  now that we have changed the logical def of material anatomical entity, we may need to assert here that anatomical structures are part of organisms at all times.  Or perhaps this is not the case - ie might some anatomical entities that are *produced by*  organisms be considered 'structures' if they have a defined shape? Such as a kidney stone?  Or would a kidney stone be a material anatomical entity but not a structure because its 3D shape is not 'designed/defined by the organisms genome'? *****
 
@@ -192,7 +193,8 @@ This leads to a need to better define or refine the treatment of 3-D shape - to 
 MH: Are all anatomical structures part of or located in a single organism? What about fungal colonies that have anatomical structures comprised of more than one organism? or dicty fruiting bodies?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/PATO_0000001> "MHB: there are still two quality classes - one a sibling of entity (PATO), and one a child of SDC (BFO).  Reason for this?
 ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
+DOS:  Are you sure these are equivalent?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000054> "The definition of anatomical group is frankly unusable.  There simply too much to keep track of and it contains terms that are not defined elsewhere in CARO. For example, nowhere in CARO is there a definition of ‘multi-tissue aggregate’, or for that matter *‘organ’*.
 
 * Comments AD: seems to be a major oversight of CARO
@@ -221,8 +223,10 @@ Why is it useful to make the distinction between scattered aggregates and connec
 
 {MJY - I don’t like 'disconnected'} 
 MAH: perhaps we can add something about classfiication together by function. Q: is this always the case? systems yes, but there are other groups like joints classfied like this. joints can be classfiied in part by function. What else?")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
-DOS:  Are you sure these are equivalent?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000040> "There exists  cases in vertebrates where what we might think of an acellular structure actually contains cells as part of its development or processes that it is involved in. For example, a basal lamina with a few cells. 
+
+Can classify adult structure as acellular and not the mature one. For borderline cases we can simply consider the cells to be located in the structure, not part of it. "^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000014> "GO:cell part")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000003> "name: anatomical structure
 revised definition: \"Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.\" *{what is ‘coordinated expression of the organism's own genome’ we don’t understand the implications of stating this, so make it simpler - i.e. we almost NEVER know if there are other genomes involved - MJY)*
