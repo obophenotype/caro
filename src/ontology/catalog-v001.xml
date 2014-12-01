@@ -13,6 +13,8 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/bfo_classes_only.owl" uri="imports/bfo_classes_only.owl"/>
 
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/bridges/zfa_bridge.owl" uri="bridges/zfa_bridge.owl"/>
+
 
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
     </group>
