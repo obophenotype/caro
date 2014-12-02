@@ -53,7 +53,7 @@ mirror/%.owl:
 
 bridge-checks: bridge-check-zfa.txt
 
-bridge-check-%.txt: caro.owl
+bridge-check-%.txt: caro.owl bridges/%_bridge.owl
 	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r hermit -u > $@
 classic-bridge-check-%.txt: caro.owl
 	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --run-reasoner -r elk -u > $@
