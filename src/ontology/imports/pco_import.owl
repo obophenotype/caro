@@ -12,8 +12,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PCO_0000000> "M
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCO_0000000> "A material entity that consists of two or more organisms, viruses, or viroids.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCO_0000000> "collection of organisms")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PCO_0000000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000027> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/CARO_0001010>) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/CARO_0001010>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PCO_0000000> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
-Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"^^xsd:string)
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
