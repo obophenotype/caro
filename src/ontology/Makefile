@@ -56,7 +56,7 @@ REASONER= hermit
 bridge-checks: bridge-check-zfa.txt
 
 bridge-check-%.txt: caro.owl bridges/%_bridge.owl
-	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r $(REASONER) -u > $@
+	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r $(REASONER) -u > $@.tmp && mv $@.tmp $@
 
 classic-bridge-check-%.txt: caro.owl
 	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --run-reasoner -r elk -u > $@
