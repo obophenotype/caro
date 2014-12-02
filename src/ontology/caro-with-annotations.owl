@@ -93,6 +93,7 @@ lipid molecules can get from one of the chemical ontologies. istvan.miko@gmail.c
 revised definition: “A maximally connected anatomical structure, bounded by a cell membrane and containing chromosomes encoding a whole genome.”
 [Excludes erythrocytes – so should have separate class for these?]
 MH: remember this was intended to be the same term as is in GO and CL. We tried a round of coordination but it didnt’ really happen. We should try again. Same is true for Cell Component below.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001010> "MHB: What is the purpose of this class.  And what is the status of virusees/viriods wrt being anatomical entities?")
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001013>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0001013> "A 2D anatomical entity that has no 3D projection.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0001013> "The midline plane that bissects a human body into left and right halves.")
@@ -104,6 +105,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.ob
 
 2. this class inherits being part of an organism at all times (or being produced by and located in an ortanism at all times) from material anatomical entity . . . implicaitons of this?")
 SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010004> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CARO_0000013>) <http://purl.obolibrary.org/obo/CARO_0000013>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0030000> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CARO_0001010> <http://purl.obolibrary.org/obo/PCO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001993>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/REO_0000000>))
@@ -211,7 +213,8 @@ This leads to a need to better define or refine the treatment of 3-D shape - to 
 MH: Are all anatomical structures part of or located in a single organism? What about fungal colonies that have anatomical structures comprised of more than one organism? or dicty fruiting bodies?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/PATO_0000001> "MHB: there are still two quality classes - one a sibling of entity (PATO), and one a child of SDC (BFO).  Reason for this?
 ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
+DOS:  Are you sure these are equivalent?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000054> "The definition of anatomical group is frankly unusable.  There simply too much to keep track of and it contains terms that are not defined elsewhere in CARO. For example, nowhere in CARO is there a definition of ‘multi-tissue aggregate’, or for that matter *‘organ’*.
 
 * Comments AD: seems to be a major oversight of CARO
@@ -240,17 +243,15 @@ Why is it useful to make the distinction between scattered aggregates and connec
 
 {MJY - I don’t like 'disconnected'} 
 MAH: perhaps we can add something about classfiication together by function. Q: is this always the case? systems yes, but there are other groups like joints classfied like this. joints can be classfiied in part by function. What else?")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
-DOS:  Are you sure these are equivalent?")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000014> "GO:cell part")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000040> "There exists  cases in vertebrates where what we might think of an acellular structure actually contains cells as part of its development or processes that it is involved in. For example, a basal lamina with a few cells. 
 
 Can classify adult structure as acellular and not the mature one. For borderline cases we can simply consider the cells to be located in the structure, not part of it. "^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000014> "GO:cell part")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000003> "name: anatomical structure
 revised definition: \"Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.\" *{what is ‘coordinated expression of the organism's own genome’ we don’t understand the implications of stating this, so make it simpler - i.e. we almost NEVER know if there are other genomes involved - MJY)*
 
 * Comment - DOS: Not entirely happy with this myself - trying to be somewhat conservative with original CARO. But this does serve to differentiate things like bone, muscle, antenna from blood/shit/urine, which are classified under 'portion of organism substance'*")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001010> "MHB: What is the purpose of this class.  And what is the status of virusees/viriods wrt being anatomical entities?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0000011> "The old CARO1 def is unclear.  A better approach - perhaps all anatomical systems should be defined functionally, with connected vs disconnected being a differentium? see https://code.google.com/p/caro2/issues/detail?id=6")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000004> "1. CM: this class  presumably includes blood - so blood would not be a tissue (if these were disjoint). likewise dentine?
 
