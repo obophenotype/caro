@@ -51,10 +51,13 @@ mirror/%.owl:
 ## BRIDGES TO OTHER AOS
 ## ----------------------------------------
 
+REASONER= hermit
+
 bridge-checks: bridge-check-zfa.txt
 
 bridge-check-%.txt: caro.owl bridges/%_bridge.owl
-	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r hermit -u > $@
+	owltools $(USECAT) bridges/$*_bridge.owl --run-reasoner -r $(REASONER) -u > $@
+
 classic-bridge-check-%.txt: caro.owl
 	owltools --catalog-xml catalog-classic.xml bridges/$*_bridge.owl --run-reasoner -r elk -u > $@
 
