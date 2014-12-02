@@ -1,0 +1,17 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/caro/bridges/po_bridge.owl>
+Import(<http://purl.obolibrary.org/obo/caro.owl>)
+Import(<http://purl.obolibrary.org/obo/po.owl>)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/PO_0025131>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/PO_0009011>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000004> <http://purl.obolibrary.org/obo/PO_0025161>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000005> <http://purl.obolibrary.org/obo/PO_0025117>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/CARO_0000055> <http://purl.obolibrary.org/obo/PO_0025496>)
+)
