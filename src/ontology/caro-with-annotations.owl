@@ -203,8 +203,8 @@ OWL def: SubClassOf proper_part_of some cell
 
 2. MH:  lets just change to the GO term. may need to reconcile the extracellular class.
 DOS: 'cell part' is good. Because of the extracellular matrix issue, I think this is a sub-type of GO 'cellular component'.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0001008> "DOS: Nothing in the definitions of acellular anatomical structure or anatomical substance specifies that they must be gross.  Is a microlitre of urine a gross anatomical structure?  see https://code.google.com/p/caro2/issues/detail?id=13&thanks=13&ts=1362398915 for further discussion.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0002006> "A weak definition.  Needs serious work!")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000000> <http://purl.obolibrary.org/obo/CARO_0001008> "DOS: Nothing in the definitions of acellular anatomical structure or anatomical substance specifies that they must be gross.  Is a microlitre of urine a gross anatomical structure?  see https://code.google.com/p/caro2/issues/detail?id=13&thanks=13&ts=1362398915 for further discussion.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000041> "DOS notes: Legacy term.  FMA defines largely by exclusion, but based on usage it seems to mean something like 'a  connected structure made up of heterologous parts'. It is used especially where some of those parts have fiat boundaries through them - e.g. vertebrate joints - where defining the contribution of the bones involved requires fiat boundaries through those bones.  My worry is that this class could apply to almost anything, and in most cases there will be more useful classifications we could apply too.  So the result will be multiple inheritance for no obvious gain.  However, it has been so widely used that the term is likely to be maintained for the foresable future.  It should probably not have any disjointness axioms associated with it.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0000003> "MHB:  *****Previously, 'part of some organism' axiom was inherited from 'material anatomical entity'.  now that we have changed the logical def of material anatomical entity, we may need to assert here that anatomical structures are part of organisms at all times.  Or perhaps this is not the case - ie might some anatomical entities that are *produced by*  organisms be considered 'structures' if they have a defined shape? Such as a kidney stone?  Or would a kidney stone be a material anatomical entity but not a structure because its 3D shape is not 'designed/defined by the organisms genome'? *****
 
@@ -213,8 +213,6 @@ This leads to a need to better define or refine the treatment of 3-D shape - to 
 MH: Are all anatomical structures part of or located in a single organism? What about fungal colonies that have anatomical structures comprised of more than one organism? or dicty fruiting bodies?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/PATO_0000001> "MHB: there are still two quality classes - one a sibling of entity (PATO), and one a child of SDC (BFO).  Reason for this?
 ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
-DOS:  Are you sure these are equivalent?")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000054> "The definition of anatomical group is frankly unusable.  There simply too much to keep track of and it contains terms that are not defined elsewhere in CARO. For example, nowhere in CARO is there a definition of ‘multi-tissue aggregate’, or for that matter *‘organ’*.
 
 * Comments AD: seems to be a major oversight of CARO
@@ -243,11 +241,12 @@ Why is it useful to make the distinction between scattered aggregates and connec
 
 {MJY - I don’t like 'disconnected'} 
 MAH: perhaps we can add something about classfiication together by function. Q: is this always the case? systems yes, but there are other groups like joints classfied like this. joints can be classfiied in part by function. What else?")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CARO_0002006> "Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000007> <http://purl.obolibrary.org/obo/CARO_0001000> "MHB:  can change has_part only (not (cell))  to has_component exactly 0 cell?
+DOS:  Are you sure these are equivalent?")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000014> "GO:cell part")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CARO_0000040> "There exists  cases in vertebrates where what we might think of an acellular structure actually contains cells as part of its development or processes that it is involved in. For example, a basal lamina with a few cells. 
 
 Can classify adult structure as acellular and not the mature one. For borderline cases we can simply consider the cells to be located in the structure, not part of it. "^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000004> <http://purl.obolibrary.org/obo/CARO_0000014> "GO:cell part")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/REO_0000006> <http://purl.obolibrary.org/obo/CARO_0000003> "name: anatomical structure
 revised definition: \"Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.\" *{what is ‘coordinated expression of the organism's own genome’ we don’t understand the implications of stating this, so make it simpler - i.e. we almost NEVER know if there are other genomes involved - MJY)*
 
