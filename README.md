@@ -2,6 +2,12 @@
 
 The ontology is stored in src/ontology/
 
+## Bridge Files
+
+Bridge files to various AOs are here:
+
+ * [bridges/](https://github.com/obophenotype/caro/tree/master/src/ontology/bridges)
+
 ## VALIDATION
 
 We have a Jenkins job for each anatomy ontology, see the list below:
