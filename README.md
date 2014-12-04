@@ -1,5 +1,9 @@
 ## CARO
 
+A site to develop a new version of the common anatomy reference ontology (http://www.obofoundry.org/cgi-bin/detail.cgi?id=caro).  This new version will be developed in OWL. It aims to have much clearer textual definitions than the original and to be much more formalized.  This formalization will allow auto-classification and consistency checking.
+
+## Ontology 
+
 The ontology is stored in src/ontology/
 
 ## Bridge Files
