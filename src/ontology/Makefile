@@ -6,7 +6,7 @@ all: release/caro.owl
 all_ext: all bridge-checks
 
 release/caro.owl: caro.owl
-	ontology-release-runner $(USECAT) --skip-release-folder --force  --ignoreLock  --reasoner hermit --no-subsets --simple --asserted --outdir release $<
+	ontology-release-runner $(USECAT) --skip-release-folder --force  --ignoreLock --allow-overwrite --reasoner hermit --no-subsets --simple --asserted --outdir release $<
 
 # ----------------------------------------
 # Regenerate imports
