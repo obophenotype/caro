@@ -6,7 +6,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(</imports/pato_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2014-08-15/pato.owl>)
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2015-04-09/pato.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
@@ -27,7 +27,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002124>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002226>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002309>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010001>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
@@ -65,4 +66,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002266> "3-
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002266> <http://purl.obolibrary.org/obo/PATO_0000052>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002309> "fiber shaped"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002309> <http://purl.obolibrary.org/obo/PATO_0002226>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0010000> "maximally connected"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0010000> <http://purl.obolibrary.org/obo/PATO_0000141>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0010001> "disconnected"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0010001> <http://purl.obolibrary.org/obo/PATO_0000141>)
 )
