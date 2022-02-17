@@ -1,73 +1,14 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<rdf:RDF 
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/caro/imports/pato_import.owl"/>
 
-
-Ontology(</imports/pato_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2015-04-09/pato.owl>)
-
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000125>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001987>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001992>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001993>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002014>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002078>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002124>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002226>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002266>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002309>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0010001>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000052> "shape"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000052> <http://purl.obolibrary.org/obo/PATO_0000051>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000125> "mass"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000125> <http://purl.obolibrary.org/obo/PATO_0001018>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000141> "structure"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000141> <http://purl.obolibrary.org/obo/PATO_0000051>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001873> "cylindrical"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001873> <http://purl.obolibrary.org/obo/PATO_0002007>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001987> "saccular"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001987> <http://purl.obolibrary.org/obo/PATO_0002014>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001992> "cellularity"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001992> <http://purl.obolibrary.org/obo/PATO_0001995>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001993> "multicellular"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001993> <http://purl.obolibrary.org/obo/PATO_0001992>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001995> "organismal quality"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001995> <http://purl.obolibrary.org/obo/PATO_0001241>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002007> "convex 3-D shape"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002007> <http://purl.obolibrary.org/obo/PATO_0002266>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002014> "structure, cavities"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002014> <http://purl.obolibrary.org/obo/PATO_0000141>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002078> "hollow"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002078> <http://purl.obolibrary.org/obo/PATO_0002014>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002124> "laminar"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002124> <http://purl.obolibrary.org/obo/PATO_0000141>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002226> "subcylindrical"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002226> <http://purl.obolibrary.org/obo/PATO_0001873>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002266> "3-D shape"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002266> <http://purl.obolibrary.org/obo/PATO_0000052>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002309> "fiber shaped"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002309> <http://purl.obolibrary.org/obo/PATO_0002226>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0010000> "maximally connected"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0010000> <http://purl.obolibrary.org/obo/PATO_0000141>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0010001> "disconnected"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0010001> <http://purl.obolibrary.org/obo/PATO_0000141>)
-)
+    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+</rdf:RDF>

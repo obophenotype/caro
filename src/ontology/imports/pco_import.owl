@@ -1,20 +1,14 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<rdf:RDF 
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/caro/imports/pco_import.owl"/>
 
-
-Ontology(<http://purl.obolibrary.org/obo/caro/imports/pco_import.owl.owl>
-
-Declaration(Class(<http://purl.obolibrary.org/obo/PCO_0000000>))
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PCO_0000000> "May be of the same or different species.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCO_0000000> "A material entity that consists of two or more organisms, viruses, or viroids.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCO_0000000> "collection of organisms")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PCO_0000000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000027> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/CARO_0001010>) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/CARO_0001010>)))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"^^xsd:string)
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
-)
+    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+</rdf:RDF>

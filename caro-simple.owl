@@ -1,0 +1,2164 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/caro/caro-simple.owl#"
+     xml:base="http://purl.obolibrary.org/obo/caro/caro-simple.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:caro="http://purl.obolibrary.org/obo/caro#"
+     xmlns:fbbt="http://purl.obolibrary.org/obo/fbbt#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/caro/caro-simple.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/caro/releases/2022-02-17/caro-simple.owl"/>
+        <dc:description>None</dc:description>
+        <dc:title>Common Anatomy Reference Ontology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <rdfs:comment>Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-17</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <oboInOwl:hasDbXref>IAO:0000112</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>example_of_usage</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>example_of_usage</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>example of usage</rdfs:label>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <oboInOwl:hasDbXref>IAO:0000116</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>editor_note</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>editor_note</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>editor note</rdfs:label>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <oboInOwl:hasDbXref>IAO:0000232</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>curator_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>curator_notes</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <rdfs:label>curator notes</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424">
+        <rdfs:label>expand expression to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">has axiom label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <rdfs:label>term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_creation_date"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_scope -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_scope"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_synonym_typedef -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_synonym_typedef"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/REO_0000000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/caro#core -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caro#core">
+        <rdfs:comment>CARO2 core class</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/caro#plus -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/caro#plus">
+        <rdfs:comment>CARO2 plus class</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#InChIKey -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#InChIKey">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#olfactory_system_draft -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#olfactory_system_draft">
+        <rdfs:comment>adult olfactory system model</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbt#systematic_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbt#systematic_synonym">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro/subsets#ro-eco -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro/subsets#ro-eco">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/member -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/member"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/license</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dcterms-license</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
+        <rdfs:label>license</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
+        <rdfs:label>synonym_type_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consider -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
+        <rdfs:label>consider</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#data-version -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#data-version"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label>has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasScope -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope">
+        <rdfs:label>has_scope</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label>has_synonym_type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+        <obo:IAO_0000589>is defined by</obo:IAO_0000589>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000589"/>
+        <owl:annotatedTarget>is defined by</owl:annotatedTarget>
+        <rdfs:comment>This is an experimental annotation</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>seeAlso</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
+        <rdfs:label>see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/homepage</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>foaf-homepage</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>foaf-homepage</oboInOwl:shorthand>
+        <rdfs:label>homepage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- ttp://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="ttp://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:label>part of</rdfs:label>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part_of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
+
+A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_part</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
+        <rdfs:label>has part</rdfs:label>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:label>has_part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>RO:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>bearer_of</oboInOwl:id>
+        <oboInOwl:shorthand>bearer_of</oboInOwl:shorthand>
+        <rdfs:label>bearer of</rdfs:label>
+        <rdfs:label xml:lang="en">has characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002002">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CARO_0000010"/>
+        <obo:IAO_0000112 xml:lang="en">my body has 2D boundary the surface of my skin</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A 2D boundary may have holes and gaps, but it must be a single connected entity, not an aggregate of several disconnected parts.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Although the boundary is two-dimensional, it exists in three-dimensional space and thus has a 3D shape.</obo:IAO_0000116>
+        <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">has boundary</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">has_2D_boundary</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>RO:0002002</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_boundary</oboInOwl:id>
+        <oboInOwl:shorthand>has_boundary</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">has 2D boundary</rdfs:label>
+        <rdfs:label>has boundary</rdfs:label>
+        <rdfs:label xml:lang="en">has_boundary</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002180">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>w &apos;has component&apos; p if w &apos;has part&apos; p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.</obo:IAO_0000115>
+        <obo:IAO_0000116>The definition of &apos;has component&apos; is still under discussion. The challenge is in providing a definition that does not imply transitivity.</obo:IAO_0000116>
+        <obo:IAO_0000232 xml:lang="en">For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like &apos;has part exactly 5 digit, you would instead use has_component exactly 5 digit.</obo:IAO_0000232>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>RO:0002180</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_component</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <oboInOwl:shorthand>has_component</oboInOwl:shorthand>
+        <rdfs:label>has component</rdfs:label>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Componency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0030000"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000006"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000007"/>
+        </owl:disjointUnionOf>
+        <obo:IAO_0000115>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000000</oboInOwl:id>
+        <rdfs:comment>Following BFO, material anatomical entities may have immaterial parts (the lumen of your stomach is part of your stomach).  The granularity limit follows the limits set by the Gene Ontology on the granularity limit for GO:cellular_component. Note that substances produced by an organism (sweat, feaces, urine) do not need to be part of an organism to qualify as an anatomical structure.</rdfs:comment>
+        <rdfs:label>anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CAROC:Brownsville2014</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <obo:IAO_0000115>Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000003</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:comment>Note that the definition does not say &apos;generated exclusively by the co-ordinated expression of the organism&apos;s own genome&apos;, so this is still valid for cases where normal morphogenesis requires the actions of a facultative symbiont, or some looser dependency such as the a requirement for the presence of gut flora for normal gut development.</rdfs:comment>
+        <rdfs:label>connected anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <obo:IAO_0000112>Examples include feces, urine, blood, blood plasma, lymph, hemolymph, cerbro-spinal fluid.  This class does not encompass anatomical entities with inherent 3D structure such as dentine and arthropod cuticle.</obo:IAO_0000112>
+        <obo:IAO_0000115>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body and that does not have inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>portion of organism substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CARO:0000004</oboInOwl:id>
+        <rdfs:comment>Note - CARO explicitly declares organisms substances to be part of (some) organism.</rdfs:comment>
+        <rdfs:label>organism substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000008"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000009"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001002"/>
+        <obo:IAO_0000115>An Immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes and that is bounded by an anatomical surface.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000005</oboInOwl:id>
+        <rdfs:comment>Original definition: &quot;Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.&quot;  The last clause. &quot;contains one or more organism substances or anatomical structures&quot; was dropped from the definition because it was an unnecessary restriction.</rdfs:comment>
+        <rdfs:label>anatomical space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
+        <owl:disjointWith>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
+            </owl:Restriction>
+        </owl:disjointWith>
+        <obo:IAO_0000115>An anatomical entity that has mass.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000006</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:label>material anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <owl:disjointWith>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+            </owl:Restriction>
+        </owl:disjointWith>
+        <obo:IAO_0000115>Anatomical entity that has no mass.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000007</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:label>immaterial anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000009"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001002"/>
+        <obo:IAO_0000112>A line between two points where these are typically used to measure some aspect of morphology, such as the distance between the eyes or the length of a leg. </obo:IAO_0000112>
+        <obo:IAO_0000115>A one dimensional, immaterial anatomical entity.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000008</oboInOwl:id>
+        <rdfs:label>anatomical line</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001002"/>
+        <obo:IAO_0000112>The tip of the nose or other material anatomical entity, or the end of an anatomical line. </obo:IAO_0000112>
+        <obo:IAO_0000115>Non-material anatomical entity of zero dimension, which forms a boundary of an anatomical line or surface.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000009</oboInOwl:id>
+        <rdfs:label>anatomical point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
+        <obo:IAO_0000115>A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures.</obo:IAO_0000115>
+        <rdfs:comment>Except in the case of abstracted fiat boundaries such as the midline plane of an organism, all 2D anatomical entities have a 3 dimensional projection.  For example, the surface of the shell of a muscle has a distinct shape that projects into the third dimension.  Note that boundaries are 2D structures.  They have no thickness - and so can not be sites of gene expression or gene product localisation.  For this, use boundary region terms.</rdfs:comment>
+        <rdfs:label>anatomical boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000011</oboInOwl:id>
+        <rdfs:label>connected anatomical system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000024"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010002"/>
+        <obo:IAO_0000115>Anatomical structure that is an individual member of a clade and, at some point in its life-cycle, consists of more than one cell.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000012</oboInOwl:id>
+        <rdfs:comment>MH: Can&apos;t define this class based on 2 or more cells because most multi cellular organisms (if not all) have only a single cell at some point in life history. 
+
+MH: sexual subtypes should probably be logically defined based on sexual processes or sex qualities.</rdfs:comment>
+        <rdfs:label>multicellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020003"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000014"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000042"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>An anatomical structure that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CL:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO:0005623</oboInOwl:hasDbXref>
+        <oboInOwl:id>CARO:0000013</oboInOwl:id>
+        <rdfs:comment>deprecate and replace with CL or GO term?</rdfs:comment>
+        <rdfs:label>cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000042"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>Anatomical structure that is part of a cell and that has a granularity level equal to that of a protein complex or higher.</obo:IAO_0000115>
+        <obo:IAO_0000118>cell component</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000014</oboInOwl:id>
+        <rdfs:comment>This is declared equivalent with GO:0044464. The definition should be co-ordinated with GO. We could obsolete the CARO class and just use the GO class.</rdfs:comment>
+        <rdfs:label xml:lang="en">cell part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000055"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Multi-tissue structure that is part of a compound organ.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000019</oboInOwl:id>
+        <rdfs:label>compound organ component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An organ that consists of a single multi-tissue structure.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000021</oboInOwl:id>
+        <rdfs:label>simple organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010002"/>
+        <obo:IAO_0000115>An organ consisting of multiple, distinct multi-tissue structures.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000024</oboInOwl:id>
+        <rdfs:label>compound organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000048"/>
+        <obo:IAO_0000115>Gonochoristic organism that can produce male gametes.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000027</oboInOwl:id>
+        <rdfs:label>male organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000048"/>
+        <obo:IAO_0000115>Gonochoristic organism that can produce female gametes.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000028</oboInOwl:id>
+        <rdfs:label>female organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+        <obo:IAO_0000115>Multi-cellular organism that can produce both male and female gametes.</obo:IAO_0000115>
+        <obo:IAO_0000118>dioecious organism</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000029</oboInOwl:id>
+        <rdfs:label>hermaphroditic organism</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>dioecious organism</owl:annotatedTarget>
+        <obo:IAO_scope>RELATED</obo:IAO_scope>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+        <obo:IAO_0000115>Multi-cellular organism that does not produce gametes.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000030</oboInOwl:id>
+        <rdfs:label>asexual multi-cellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.</obo:IAO_0000115>
+        <obo:IAO_0000116>Old definition: Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.</obo:IAO_0000116>
+        <oboInOwl:id>CARO:0000032</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:label>organism subdivision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000042"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>An anatomical structure that has no cells or cell parts as a part.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000040</oboInOwl:id>
+        <rdfs:comment>Example.  Insect cuticle, eggshell, hair.</rdfs:comment>
+        <rdfs:label>acellular anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000041">
+        <obo:IAO_0000115>Anatomical group that has its parts adjacent to one another.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CARO_0020001"/>
+        <oboInOwl:id>CARO:0000041</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#plus"/>
+        <rdfs:label>anatomical cluster</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical group that has its parts adjacent to one another.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:MAH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:49443</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>A multicellular anatomical structure that is associated with an embryo and derived from the zygote from which it develops, but which does not contribute to the embryo proper or to structures that are part of the same organism after embryogenesis.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000042</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#plus"/>
+        <rdfs:comment>MH: define as not part of embryo, or will not develop into embryo? MH: changed def to exclude cells so this class could be included in gross anatomical part. DOS: Changed to something that I think works for both vertebrates and invertebrates and that keeps the restriction to multicellular structures.  Old def: &quot;Anatomical structure that is contiguous with the embryo and is comprised of portions of tissue that will not contribute to the embryo.&quot;.  One remaining question - perhaps zygote is too restrictive given that some organisms have parthenogenesis e.g. aphids?
+</rdfs:comment>
+        <rdfs:label>extraembryonic structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</obo:IAO_0000115>
+        <obo:IAO_0000116>relabel &apos;tissue&apos;?</obo:IAO_0000116>
+        <obo:IAO_0000118>portion of tissue</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000043</oboInOwl:id>
+        <rdfs:label>tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000029"/>
+        <obo:IAO_0000115>Hermaphroditic organism that produces gametes first of one sex, and then later of the other sex.</obo:IAO_0000115>
+        <obo:IAO_0000118>consecutive hermaphroditic organism</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000045</oboInOwl:id>
+        <rdfs:label>sequential hermaphroditic organism</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>consecutive hermaphroditic organism</owl:annotatedTarget>
+        <obo:IAO_scope>RELATED</obo:IAO_scope>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000029"/>
+        <obo:IAO_0000115>Hermaphroditic organism that produces both male and female gametes at the same time.</obo:IAO_0000115>
+        <obo:IAO_0000118>serially hermaphroditic organism</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000046</oboInOwl:id>
+        <rdfs:label>synchronous hermaphroditic organism</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>serially hermaphroditic organism</owl:annotatedTarget>
+        <obo:IAO_scope>RELATED</obo:IAO_scope>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+        <obo:IAO_0000115>Multi-cellular organism that has male and female sexes.</obo:IAO_0000115>
+        <obo:IAO_0000118>monoecious organism</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000048</oboInOwl:id>
+        <rdfs:label>gonochoristic organism</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000048"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>monoecious organism</owl:annotatedTarget>
+        <obo:IAO_scope>RELATED</obo:IAO_scope>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000045"/>
+        <obo:IAO_0000115>Sequential hermaphroditic organism that produces\ngametes first of the male sex, and then later of the\nfemale sex.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000049</oboInOwl:id>
+        <rdfs:label>protandrous hermaphroditic organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000045"/>
+        <obo:IAO_0000115>Sequential hermaphroditic organism that produces\ngametes first of the female sex, and then later of the\nmale sex.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000050</oboInOwl:id>
+        <rdfs:label>protogynous hermaphroditic organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000054">
+        <obo:IAO_0000115>Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.
+</obo:IAO_0000115>
+        <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/CARO_0020000"/>
+        <oboInOwl:id>CARO:0000054</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:comment>Obsoleted because the definition is too opaque.  Also because this class was a subclass of &apos;anatomical structure&apos; (CARO_0000003), but a similarly named class in the refactored caro (CARO_0020000) is a sibling of &apos;anatomical structure&apos;.</rdfs:comment>
+        <rdfs:label>anatomical group</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.
+</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:MAH</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Anatomical structure that has as its parts two or more portions of tissue of at least two different types and which through specific morphogenetic processes forms a single distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000055</oboInOwl:id>
+        <rdfs:label>multi-tissue structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Anatomical space that is part of a cell.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000062</oboInOwl:id>
+        <rdfs:label>cell space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000004"/>
+        <obo:IAO_0000115>Portion of organism substance located within a cell.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000063</oboInOwl:id>
+        <rdfs:comment>Deprecate this as better to leave it up to GO to define?</rdfs:comment>
+        <rdfs:label>portion of cell substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Organism that consists of a single cell for all of its life-cycle.</obo:IAO_0000115>
+        <obo:IAO_0000118>single-cell organism</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0000064</oboInOwl:id>
+        <rdfs:label>unicellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000065">
+        <obo:IAO_0000115>Acellular anatomical structure that consists of a thin sheet of fibrous proteins that underlie and support the cells of an epithelium. It separates the cells of an epithelium from any underlying tissue.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000065</oboInOwl:id>
+        <rdfs:label>basal lamina</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+        <obo:IAO_0000115>Portion of tissue, that consists of one or more layers of epithelial cells connected to each other by cell junctions and which is underlain by a basal lamina.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000066</oboInOwl:id>
+        <rdfs:label>epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000073"/>
+        <obo:IAO_0000115>Unilaminar epithelium that consists of a single layer of cuboidal cells.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000067</oboInOwl:id>
+        <rdfs:label>simple cuboidal epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000073"/>
+        <obo:IAO_0000115>Unilaminar epithelium that consists of a single layer of columnar cells.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000068</oboInOwl:id>
+        <rdfs:label>simple columnar epithlium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000066"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000071"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000073"/>
+        <obo:IAO_0000115>Epithelium that consists of more than one layer of epithelial cells.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000069</oboInOwl:id>
+        <rdfs:label>multilaminar epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000073"/>
+        <obo:IAO_0000115>Unilaminar epithelium that consists of a single layer of squamous cells.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000070</oboInOwl:id>
+        <rdfs:label>simple squamous epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000066"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000073"/>
+        <obo:IAO_0000115>Epithelium that consists of epithelial cells not arranged in one ore more layers.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000071</oboInOwl:id>
+        <rdfs:label>atypical epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000024"/>
+        <obo:IAO_0000115>Compound organ that contains one or more macroscopic anatomical spaces.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000072</oboInOwl:id>
+        <rdfs:label>cavitated compound organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000066"/>
+        <obo:IAO_0000115>Epithelium that consists of a single layer of epithelial cells.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000073</oboInOwl:id>
+        <rdfs:label>unilaminar epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000024"/>
+        <obo:IAO_0000115>Compound organ that does not contain macroscopic anatomical spaces.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000074</oboInOwl:id>
+        <rdfs:label>solid compound organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000077">
+        <obo:IAO_0000115>Cell which has as its part a cytoskeleton that allows for tight cell to cell contact and which has apical-basal cell polarity.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000077</oboInOwl:id>
+        <rdfs:label>epithelial cell</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000004"/>
+        <obo:IAO_0000115>A fluid that is circulated around a multicellular organism carrying nutrients and carrying away waste products.</obo:IAO_0000115>
+        <rdfs:comment>Examples: blood, lymph, hemolymph</rdfs:comment>
+        <rdfs:label>circulating fluid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010003"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0000134"/>
+        <obo:IAO_0000115 xml:lang="en">An appendage that is one of a bilateral pair.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">paired appendage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010003"/>
+        <rdfs:label xml:lang="en">unpaired appendage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CARO_0000014"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.</obo:IAO_0000115>
+        <obo:IAO_0000118>multi-cell-component structure</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0001000</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:comment>Examples: a bundle of neuron projections in the brain; a region neuropil in an arthropod central nervous system; a region of cortex (preikaryal rind) in an arthropod brain.</rdfs:comment>
+        <rdfs:label>multi-cell-part structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <obo:IAO_0000115>A fasciculated bundle of neuron projections (GO:0043005), largely or completely lacking synapses.</obo:IAO_0000115>
+        <obo:IAO_0000118>nerve fiber bundle</obo:IAO_0000118>
+        <oboInOwl:id>CARO:0001001</oboInOwl:id>
+        <rdfs:label>neuron projection bundle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <owl:annotatedTarget>nerve fiber bundle</owl:annotatedTarget>
+        <obo:IAO_scope>EXACT</obo:IAO_scope>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001007"/>
+        <obo:IAO_0000115 xml:lang="en">A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism&apos;s environment.  Examples include the surface of your skin, the surface of the lining of your gut; the surface of the endothelium of you aorta that is in contact with blood.
+</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000010</oboInOwl:id>
+        <rdfs:comment xml:lang="en">Old definition: &quot;Non-material anatomical entity of two dimensions, that is demarcated by anatomical lines or points on the external or internal surfaces of anatomical structures.&quot;  Note, in the new definition, the space referred to is not necessarily an anatomical space.  It may be the outside of an organism.</rdfs:comment>
+        <rdfs:label>anatomical surface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A  two dimensional anatomical entity that does not correspond to any physical discontinuity.</obo:IAO_0000115>
+        <rdfs:comment>Fiat anatomical boundaries are generally defined using external physical criteria as landmarks.  One might argue that all boundaries are actually fiat in the sense that there must be some fiat element at a fine enough scale of granularity.  This ontology choses to ignore this issue as below the level of granularity relevant to anatomy. (DOS121102)</rdfs:comment>
+        <rdfs:label xml:lang="en">fiat anatomical boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">An anatomical boundary that corresponds to some physical discontinuity.</obo:IAO_0000115>
+        <rdfs:comment>One might argue that all boundaries are actually fiat in the sense that there must be some fiat element at a fine enough scale of granularity.  This ontology choses to ignore this issue as below the level of granularity relevant to anatomy. (DOS121102)</rdfs:comment>
+        <rdfs:label xml:lang="en">bona-fide anatomical boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">A two dimensional anatomical entity that is the boundary of a domain of  expression of some gene.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gene expression boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">A two dimensional anatomical entity that is not a morphological boundary and that cells do not cross during development.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">developmental compartment boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">A two dimensional anatomical structure that corresponds to some structural discontinuity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">morphological boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. </obo:IAO_0000115>
+        <obo:IAO_0000117>mah</obo:IAO_0000117>
+        <obo:IAO_creation_date>10.7.2011</obo:IAO_creation_date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#plus"/>
+        <rdfs:label xml:lang="en">gross anatomical part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001009">
+        <obo:IAO_0000115>Anatomical structure that surrounds an immaterial anatomical entity.</obo:IAO_0000115>
+        <obo:IAO_0000117>mah</obo:IAO_0000117>
+        <obo:IAO_creation_date>10.10.2011</obo:IAO_creation_date>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#plus"/>
+        <rdfs:comment>See CARO tracker #6, but essentially Chamber has connotations of space, rather than wall: see http://en.wiktionary.org/wiki/chamber
+
+This term is extremely abstract as a genus - it specifies no granularity at all. It could refer to a chamber in a protein complex in a membrane as easily as some big multi-tissue structure like a segment of gut.</rdfs:comment>
+        <rdfs:label>obsolete anatomical chamber</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001010">
+        <obo:IAO_0000115>Material anatomical entity that is a member of an individual species or is a viral or viroid particle.</obo:IAO_0000115>
+        <obo:IAO_0000117>Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_creation_date>9/18/11</obo:IAO_creation_date>
+        <rdfs:label>organism or virus or viroid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001003"/>
+        <rdfs:comment>All anatomical planes are fiat anatomical boundaries - no morphological boundary could ever be a perfect plane.</rdfs:comment>
+        <rdfs:label>anatomical plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A fiber-shaped subdivision of a neuron projection along its long axis.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">neuron projection bundle segment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001500"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A fiber-shaped subdivision of a neuron projection along its long axis.</owl:annotatedTarget>
+        <obo:IAO_0000117>DOS</obo:IAO_0000117>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0001501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A subdivision of a neuron projection along its long axis that is as long as it is wide (and so does not qualify as fiber-shaped).</obo:IAO_0000115>
+        <rdfs:comment>This term was added in order to define fasciculation relations.  It seems unlikely that it will be used directly in curation.</rdfs:comment>
+        <rdfs:label xml:lang="en">neuron projection bundle subsegment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0001501"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A subdivision of a neuron projection along its long axis that is as long as it is wide (and so does not qualify as fiber-shaped).</owl:annotatedTarget>
+        <obo:IAO_0000117>DOS</obo:IAO_0000117>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000066"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0002001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Epithelium of the integumentary system.</obo:IAO_0000115>
+        <rdfs:label>epidermis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000011"/>
+        <obo:IAO_0000115>Connected anatomical system that forms a barrier between an animal and its environment - generally consisting of an epidermis, which may be covered by some acellular structure.</obo:IAO_0000115>
+        <rdfs:label>integumentary system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020000"/>
+        <obo:IAO_0000115>An anatomical group whose members are arranged in a line.</obo:IAO_0000115>
+        <rdfs:comment>Examples include the rows of sense organs commonly found in the cuticles of insects.</rdfs:comment>
+        <rdfs:label>aligned anatomical group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020000"/>
+        <obo:IAO_0000115>Anatomical group whose parts are close together, forming a cluster.</obo:IAO_0000115>
+        <rdfs:comment>Not to be confused with anatomical cluster, in the FMA sense.  FMA anatomical structures are connected structures made up of heterologous parts.  For example, joints are anatomical clusters in the FMA.  The FMA definition on anatomical cluster, and the CARO1 definition that was based on it, are defined largely by exclusion.</rdfs:comment>
+        <rdfs:label xml:lang="en">clustered anatomical group</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0002003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical group whose parts are close together, forming a cluster.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0010003"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>One of a set of semi-repetitive organism subdivisions serially arranged along the anterior-posterior axis of an organism and excluding appendages if present.</obo:IAO_0000115>
+        <rdfs:label>segment body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000032"/>
+        <obo:IAO_0000115>A subdivision of an appendage along its proximal-distal axis, consisting consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">appendage subdivision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002006">
+        <obo:IAO_0000112>Ceolom, cranial cavity, mammalian thoracic and abdominal body cavities, arthropod hemoceol.</obo:IAO_0000112>
+        <obo:IAO_0000115>A major anatomical space of an organism in which major organs are located.</obo:IAO_0000115>
+        <rdfs:label>obsolete body cavity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <obo:IAO_0000115>An anatomical structure consisting of multiple cells, organs, tissues, distributed throught an organism, that act together to perform some physiological function.</obo:IAO_0000115>
+        <rdfs:comment>Examples include connected systems such as the circulatory system - whose elements function together to perform the function or blood circulation - and disconected systems such as the immune system.</rdfs:comment>
+        <rdfs:label>anatomical system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0002100"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Examples include connected systems such as the circulatory system - whose elements function together to perform the function or blood circulation - and disconected systems such as the immune system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0002101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0002101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0002100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An anatomical system consisting of multiple disconnected parts.</obo:IAO_0000115>
+        <rdfs:comment>Examples include the immune system and the endocrine system.</rdfs:comment>
+        <rdfs:label>disconnected anatomical system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0002101"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An anatomical system consisting of multiple disconnected parts.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001008"/>
+        <obo:IAO_0000115>An anatomical structure that has more than one cell as a part.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Sun Feb 27 10:53:00 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010000</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:label>multicellular anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010002"/>
+        <obo:IAO_0000115>A small cluster of cells of various types which form a discrete structure, largely delimited by a morphological boundary and whose components work together to make the whole structure capable of a specific function.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Sun Feb 27 11:00:35 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010001</oboInOwl:id>
+        <rdfs:comment>Examples include arthropod sensilla.</rdfs:comment>
+        <rdfs:label>cell cluster organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CARO_0010001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An anatomical structure consisting of multiple cell cluster organs, largely delimited by a morphological boundary and whose components work together to make the whole structure capable of a specific function.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Sun Feb 27 11:13:17 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010002</oboInOwl:id>
+        <rdfs:comment>Examples: compound eye; Johnston&apos;s organ.</rdfs:comment>
+        <rdfs:label>compound cell cluster organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000032"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010005"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010006"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010007"/>
+        <obo:IAO_0000115 xml:lang="en">An organism subdivision that protrudes from the body.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Fri Mar 04 07:09:17 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010003</oboInOwl:id>
+        <rdfs:label>appendage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <obo:IAO_0000115>An individual member of a clade of cellular organisms.</obo:IAO_0000115>
+        <obo:IAO_0000117>mah</obo:IAO_0000117>
+        <obo:IAO_creation_date>7.16.2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010004</oboInOwl:id>
+        <rdfs:comment>A general term for organism that is agnostic about single cell vs multi-cellular.  Note that this is a subclass of &apos;anatomical structure&apos;, meaning that an organism must be a connected structure. For example, if I take one plant and make a rooted cutting from a it, I now have two (clonally related) organisms. </rdfs:comment>
+        <rdfs:label>cellular organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0010006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010006"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010007"/>
+        <obo:IAO_0000115>One of a set of semi-repetitive organism subdivisions serially arranged along the anterior-posterior axis of an organism, including appendages if present.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Fri Mar 04 07:13:46 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:hasExactSynonym>metamere</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CARO:0010005</oboInOwl:id>
+        <rdfs:label>segment</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0010005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>One of a set of semi-repetitive organism subdivisions serially arranged along the anterior-posterior axis of an organism, including appendages if present.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000032"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CARO_0010007"/>
+        <obo:IAO_0000115>A subdivision of the organism along the anterior-posterior axis that consists of multiple adjacent segments that are either fused, and/or share more structure with each other than with segments in adjacent tagmata.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Fri Mar 04 07:14:57 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010006</oboInOwl:id>
+        <rdfs:label>tagma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0002005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0010003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>One of a set of semi-repetitive organism subdivisions serially arranged along the proximal-distal axis of an appendage</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Fri Mar 04 07:16:21 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010007</oboInOwl:id>
+        <rdfs:label>appendage segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000066"/>
+        <obo:IAO_0000115>An epithelium that is rolled into a tube.</obo:IAO_0000115>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Wed Mar 09 06:22:07 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010009</oboInOwl:id>
+        <rdfs:label>epithelial tube</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0010010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000066"/>
+        <obo:IAO_0000117>djs93</obo:IAO_0000117>
+        <obo:IAO_creation_date>Wed Mar 09 08:02:50 GMT 2011</obo:IAO_creation_date>
+        <oboInOwl:id>CARO:0010010</oboInOwl:id>
+        <rdfs:label>epithelial sac</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Material anatomical entity consisting of multiple anatomical structures that are not connected to each other.</obo:IAO_0000115>
+        <oboInOwl:id>CARO:0000054</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#core"/>
+        <rdfs:label>disconnected anatomical group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0020001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>A multicellular anatomical structure that has subparts of
+multiple organs as a part.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>anatomical cluster</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CARO:0000041</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/caro#plus"/>
+        <rdfs:comment>Examples include joints of the vertebrate musculoskeletal system (each has (fiat) parts of multiple bone organs as a part).</rdfs:comment>
+        <rdfs:label>multi organ part structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0020002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>A cluster of cells, largely surrounded by a morphological boundary.</obo:IAO_0000115>
+        <rdfs:label>cell cluster</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0020002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cluster of cells, largely surrounded by a morphological boundary.</owl:annotatedTarget>
+        <rdfs:comment>GOC:dos</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0020003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <obo:IAO_0000115>An anatomical structure consisting of one or more cells.</obo:IAO_0000115>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-28T14:20:19Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">cellular anatomical structure</rdfs:label>
+        <oboInOwl1:created_by>dos</oboInOwl1:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0020004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0010000"/>
+        <obo:IAO_0000115>A multicellular anatomical structure largely delimited by a morphological boundary whose components work together to make the whole structure capable of a specific function.</obo:IAO_0000115>
+        <rdfs:label>organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0020005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0020005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An single tissue, largely surrounded by a morpholigical boundary, whose cells work together to make the whole structure capable of a specific function.</obo:IAO_0000115>
+        <rdfs:label>single tissue organ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0030000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0030000">
+        <obo:IAO_0000115>Entity that is, is part of, or derived from an organism, virus, or viroid or a collection of them.</obo:IAO_0000115>
+        <rdfs:comment>Important for alignment with Darwin Core class &quot;Organism&quot;.</rdfs:comment>
+        <rdfs:label>biological entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0030002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0030002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0020003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The mereological sum of all cells in a single organism in which expression of some specified gene occurs.</obo:IAO_0000115>
+        <rdfs:label>expression pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000003"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000004"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0020000"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000011"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000032"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000043"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000055"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0020001"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0020002"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
