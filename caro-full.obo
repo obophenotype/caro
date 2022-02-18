@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: caro/releases/2022-02-17/caro-full.owl
+data-version: caro/releases/2022-02-18/caro-full.owl
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -40,7 +40,7 @@ ontology: caro/caro-full
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Common Anatomy Reference Ontology" xsd:string
-property_value: owl:versionInfo "2022-02-17" xsd:string
+property_value: owl:versionInfo "2022-02-18" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -3975,8 +3975,8 @@ synonym: "primaeres Amin" RELATED [ChEBI]
 synonym: "primaeres Amin" RELATED [ChEBI:]
 synonym: "Primary amine" EXACT [KEGG_COMPOUND]
 synonym: "Primary amine" EXACT [KEGG COMPOUND:]
-synonym: "primary amines" EXACT IUPAC_NAME [IUPAC]
 synonym: "primary amines" EXACT IUPAC_NAME [IUPAC:]
+synonym: "primary amines" EXACT IUPAC_NAME [IUPAC]
 synonym: "Primary monoamine" RELATED [KEGG_COMPOUND]
 synonym: "Primary monoamine" RELATED [KEGG COMPOUND:]
 synonym: "R-NH2" RELATED [IUPAC:]
@@ -4670,8 +4670,8 @@ name: heterobicyclic compound
 namespace: chebi_ontology
 def: "A bicyclic compound in which at least one of the rings contains at least one skeletal heteroatom." [ANON:ANON]
 subset: 3_STAR
-synonym: "heterobicyclic compounds" EXACT IUPAC_NAME [IUPAC]
 synonym: "heterobicyclic compounds" EXACT IUPAC_NAME [IUPAC:]
+synonym: "heterobicyclic compounds" EXACT IUPAC_NAME [IUPAC]
 is_a: CHEBI:33636 ! bicyclic compound
 is_a: CHEBI:5686 ! heterocyclic compound
 

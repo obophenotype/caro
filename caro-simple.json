@@ -587,11 +587,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-02-17"
+            "val": "2022-02-18"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/caro/releases/2022-02-17/caro-simple.json",
+        "version": "http://purl.obolibrary.org/obo/caro/releases/2022-02-18/caro-simple.json",
         "xrefs": []
       },
       "nodes": [

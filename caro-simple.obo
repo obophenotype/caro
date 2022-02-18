@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: caro/releases/2022-02-17/caro-simple.owl
+data-version: caro/releases/2022-02-18/caro-simple.owl
 subsetdef: core "CARO2 core class"
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -15,7 +15,7 @@ ontology: caro/caro-simple
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Common Anatomy Reference Ontology" xsd:string
-property_value: owl:versionInfo "2022-02-17" xsd:string
+property_value: owl:versionInfo "2022-02-18" xsd:string
 
 [Term]
 id: CARO:0000000

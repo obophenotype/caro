@@ -87,6 +87,7 @@ src/ontology/test_nomerge
 src/ontology/tmp
 src/ontology/tmp/
 src/ontology/tmp/*
+src/ontology/mirror/*
 src/patterns/all_pattern_terms.txt
 src/patterns/data/default/*.ofn
 src/patterns/data/default/*.txt

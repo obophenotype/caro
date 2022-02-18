@@ -8435,6 +8435,243 @@ ERROR	missing_label	obo:fbbt#innervated_by	rdfs:label
 ERROR	missing_label	obo:fbbt#releases_neurotransmitter	rdfs:label	
 ERROR	missing_label	obo:fbbt#secretes_hormone	rdfs:label	
 ERROR	missing_label	obo:fbbt#systematic_synonym	rdfs:label	
+WARN	missing_obsolete_label	anatomical cluster	rdfs:label	anatomical cluster
+WARN	missing_obsolete_label	anatomical group	rdfs:label	anatomical group
+WARN	missing_obsolete_label	basal lamina	rdfs:label	basal lamina
+WARN	missing_obsolete_label	epithelial cell	rdfs:label	epithelial cell
+WARN	duplicate_exact_synonym	FBbt:00001693	has_exact_synonym	wreath cell
+WARN	duplicate_exact_synonym	FBbt:00005059	has_exact_synonym	wreath cell
+WARN	duplicate_exact_synonym	FBbt:00002823	has_exact_synonym	v'ch1
+WARN	duplicate_exact_synonym	FBbt:00100024	has_exact_synonym	v'ch1
+WARN	duplicate_exact_synonym	FBbt:00003896	has_exact_synonym	Tlp6
+WARN	duplicate_exact_synonym	FBbt:00003900	has_exact_synonym	Tlp6
+WARN	duplicate_exact_synonym	FBbt:00110037	has_exact_synonym	tachykinin descending neuron
+WARN	duplicate_exact_synonym	FBbt:00110049	has_exact_synonym	tachykinin descending neuron
+WARN	duplicate_exact_synonym	FBbt:00000538	has_exact_synonym	T2 SBM
+WARN	duplicate_exact_synonym	FBbt:00000573	has_exact_synonym	T2 SBM
+WARN	duplicate_exact_synonym	FBbt:00000538	has_exact_synonym	T2 pit
+WARN	duplicate_exact_synonym	FBbt:00000573	has_exact_synonym	T2 pit
+WARN	duplicate_exact_synonym	FBbt:00007075	has_exact_synonym	superior arch
+WARN	duplicate_exact_synonym	FBbt:00007493	has_exact_synonym	superior arch
+WARN	duplicate_exact_synonym	FBbt:00004013	has_exact_synonym	suboesophageal ganglion
+WARN	duplicate_exact_synonym	FBbt:00014013	has_exact_synonym	suboesophageal ganglion
+WARN	duplicate_exact_synonym	FBbt:00001982	has_exact_synonym	subesophageal ganglion SE neuron 3
+WARN	duplicate_exact_synonym	FBbt:00100392	has_exact_synonym	subesophageal ganglion SE neuron 3
+WARN	duplicate_exact_synonym	FBbt:00001982	has_exact_synonym	subesophageal ganglion neuron 3
+WARN	duplicate_exact_synonym	FBbt:00100392	has_exact_synonym	subesophageal ganglion neuron 3
+WARN	duplicate_exact_synonym	FBbt:00000969	has_exact_synonym	srm
+WARN	duplicate_exact_synonym	FBbt:00000970	has_exact_synonym	srm
+WARN	duplicate_exact_synonym	FBbt:00000970	has_exact_synonym	spiracle retractor muscle
+WARN	duplicate_exact_synonym	FBbt:00000971	has_exact_synonym	spiracle retractor muscle
+WARN	duplicate_exact_synonym	FBbt:00003359	has_exact_synonym	somatic muscle of mesothorax
+WARN	duplicate_exact_synonym	FBbt:00003417	has_exact_synonym	somatic muscle of mesothorax
+WARN	duplicate_exact_synonym	FBbt:00004013	has_exact_synonym	SOG
+WARN	duplicate_exact_synonym	FBbt:00014013	has_exact_synonym	SOG
+WARN	duplicate_exact_synonym	FBbt:00110040	has_exact_synonym	pupal LPP2 neuron
+WARN	duplicate_exact_synonym	FBbt:00110042	has_exact_synonym	pupal LPP2 neuron
+WARN	duplicate_exact_synonym	FBbt:00003625	has_exact_synonym	perikaryal rind
+WARN	duplicate_exact_synonym	FBbt:00007114	has_exact_synonym	perikaryal rind
+WARN	duplicate_exact_synonym	FBbt:00067044	has_exact_synonym	ORN (Or82a)
+WARN	duplicate_exact_synonym	FBbt:00100436	has_exact_synonym	ORN (Or82a)
+WARN	duplicate_exact_synonym	FBbt:00067023	has_exact_synonym	ORN (Or67b)
+WARN	duplicate_exact_synonym	FBbt:00100434	has_exact_synonym	ORN (Or67b)
+WARN	duplicate_exact_synonym	FBbt:00067046	has_exact_synonym	ORN (Or42b)
+WARN	duplicate_exact_synonym	FBbt:00100427	has_exact_synonym	ORN (Or42b)
+WARN	duplicate_exact_synonym	FBbt:00067042	has_exact_synonym	ORN (Or42a)
+WARN	duplicate_exact_synonym	FBbt:00100426	has_exact_synonym	ORN (Or42a)
+WARN	duplicate_exact_synonym	FBbt:00067039	has_exact_synonym	ORN (Or35a)
+WARN	duplicate_exact_synonym	FBbt:00100425	has_exact_synonym	ORN (Or35a)
+WARN	duplicate_exact_synonym	FBbt:00067016	has_exact_synonym	ORN (Or13a)
+WARN	duplicate_exact_synonym	FBbt:00100419	has_exact_synonym	ORN (Or13a)
+WARN	duplicate_exact_synonym	FBbt:00004043	has_exact_synonym	MxN
+WARN	duplicate_exact_synonym	FBbt:00100334	has_exact_synonym	MxN
+WARN	duplicate_exact_synonym	FBbt:00007482	has_exact_synonym	mmlAPT projection neuron
+WARN	duplicate_exact_synonym	FBbt:00100225	has_exact_synonym	mmlAPT projection neuron
+WARN	duplicate_exact_synonym	FBbt:00000576	has_exact_synonym	metathoracic pleural external transverse muscle
+WARN	duplicate_exact_synonym	FBbt:00000577	has_exact_synonym	metathoracic pleural external transverse muscle
+WARN	duplicate_exact_synonym	FBbt:00000578	has_exact_synonym	metathoracic pleural external transverse muscle
+WARN	duplicate_exact_synonym	FBbt:00000579	has_exact_synonym	metathoracic pleural external transverse muscle
+WARN	duplicate_exact_synonym	FBbt:00100226	has_exact_synonym	MB-C1
+WARN	duplicate_exact_synonym	FBbt:00100240	has_exact_synonym	MB-C1
+WARN	duplicate_exact_synonym	FBbt:00001939	has_exact_synonym	lpo
+WARN	duplicate_exact_synonym	FBbt:00002688	has_exact_synonym	lpo
+WARN	duplicate_exact_synonym	FBbt:00001948	has_exact_synonym	lobula plate cell body rind
+WARN	duplicate_exact_synonym	FBbt:00100208	has_exact_synonym	lobula plate cell body rind
+WARN	duplicate_exact_synonym	FBbt:00000382	has_exact_synonym	LH
+WARN	duplicate_exact_synonym	FBbt:00007053	has_exact_synonym	LH
+WARN	duplicate_exact_synonym	FBbt:00002823	has_exact_synonym	lch1x
+WARN	duplicate_exact_synonym	FBbt:00100024	has_exact_synonym	lch1x
+WARN	duplicate_exact_synonym	FBbt:00000399	has_exact_synonym	LC
+WARN	duplicate_exact_synonym	FBbt:00100007	has_exact_synonym	LC
+WARN	duplicate_exact_synonym	FBbt:00001966	has_exact_synonym	LbrN
+WARN	duplicate_exact_synonym	FBbt:00100327	has_exact_synonym	LbrN
+WARN	duplicate_exact_synonym	FBbt:00100328	has_exact_synonym	LbrN
+WARN	duplicate_exact_synonym	FBbt:00001978	has_exact_synonym	LbN
+WARN	duplicate_exact_synonym	FBbt:00100333	has_exact_synonym	LbN
+WARN	duplicate_exact_synonym	FBbt:00100351	has_exact_synonym	interantennal lobe tract
+WARN	duplicate_exact_synonym	FBbt:00100352	has_exact_synonym	interantennal lobe tract
+WARN	duplicate_exact_synonym	FBbt:00100351	has_exact_synonym	inter-antennal lobe tract
+WARN	duplicate_exact_synonym	FBbt:00100352	has_exact_synonym	inter-antennal lobe tract
+WARN	duplicate_exact_synonym	FBbt:00001002	has_exact_synonym	GS2
+WARN	duplicate_exact_synonym	FBbt:00004182	has_exact_synonym	GS2
+WARN	duplicate_exact_synonym	FBbt:00001001	has_exact_synonym	GS1
+WARN	duplicate_exact_synonym	FBbt:00004181	has_exact_synonym	GS1
+WARN	duplicate_exact_synonym	FBbt:00002630	has_exact_synonym	frontal nerve
+WARN	duplicate_exact_synonym	FBbt:00100330	has_exact_synonym	frontal nerve
+WARN	duplicate_exact_synonym	FBbt:00003685	has_exact_synonym	CA
+WARN	duplicate_exact_synonym	FBbt:00007118	has_exact_synonym	CA
+WARN	duplicate_exact_synonym	FBbt:00100254	has_exact_synonym	beta'p
+WARN	duplicate_exact_synonym	FBbt:00100271	has_exact_synonym	beta'p
+WARN	duplicate_exact_synonym	FBbt:00100253	has_exact_synonym	beta'm
+WARN	duplicate_exact_synonym	FBbt:00100270	has_exact_synonym	beta'm
+WARN	duplicate_exact_synonym	FBbt:00100250	has_exact_synonym	beta'a
+WARN	duplicate_exact_synonym	FBbt:00100269	has_exact_synonym	beta'a
+WARN	duplicate_exact_synonym	FBbt:00100749	has_exact_synonym	basolateral ventral neuroblast
+WARN	duplicate_exact_synonym	FBbt:00100750	has_exact_synonym	basolateral ventral neuroblast
+WARN	duplicate_exact_synonym	FBbt:00110037	has_exact_synonym	anterior large descending neuron DN
+WARN	duplicate_exact_synonym	FBbt:00110049	has_exact_synonym	anterior large descending neuron DN
+WARN	duplicate_exact_synonym	FBbt:00003980	has_exact_synonym	AN
+WARN	duplicate_exact_synonym	FBbt:00006045	has_exact_synonym	AN
+WARN	duplicate_exact_synonym	FBbt:00100254	has_exact_synonym	alpha'p
+WARN	duplicate_exact_synonym	FBbt:00100268	has_exact_synonym	alpha'p
+WARN	duplicate_exact_synonym	FBbt:00100253	has_exact_synonym	alpha'm
+WARN	duplicate_exact_synonym	FBbt:00100267	has_exact_synonym	alpha'm
+WARN	duplicate_exact_synonym	FBbt:00100250	has_exact_synonym	alpha'a
+WARN	duplicate_exact_synonym	FBbt:00100266	has_exact_synonym	alpha'a
+WARN	duplicate_exact_synonym	FBbt:00100282	has_exact_synonym	alpha lobe base
+WARN	duplicate_exact_synonym	FBbt:00100285	has_exact_synonym	alpha lobe base
+WARN	missing_subset_declaration	obo:fbbt#BrainName	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#BrainName_Embargo	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#EmbDevSlim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#FB_gloss	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#FT_new	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#FlyTed	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#RD	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#cur	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#deprecated	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#hidden_assertion	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:fbbt#larval_OF	rdfs:subPropertyOf	
+WARN	duplicate_scoped_synonym	CHEBI:16865	has_exact_synonym	4-aminobutanoic acid
+WARN	duplicate_scoped_synonym	CHEBI:16865	has_related_synonym	4-aminobutanoic acid
+WARN	duplicate_scoped_synonym	CHEBI:33567	has_exact_synonym	catecholamines
+WARN	duplicate_scoped_synonym	CHEBI:33567	has_related_synonym	catecholamines
+WARN	duplicate_scoped_synonym	CHEBI:35366	has_exact_synonym	fatty acids
+WARN	duplicate_scoped_synonym	CHEBI:35366	has_related_synonym	fatty acids
+WARN	duplicate_scoped_synonym	CHEBI:37622	has_exact_synonym	carboxamides
+WARN	duplicate_scoped_synonym	CHEBI:37622	has_related_synonym	carboxamides
+WARN	duplicate_scoped_synonym	FBbt:00001303	has_exact_synonym	neuropil associated CNS glial cell
+WARN	duplicate_scoped_synonym	FBbt:00001303	has_related_synonym	neuropil associated CNS glial cell
+WARN	duplicate_scoped_synonym	FBbt:00003634	has_exact_synonym	VFS
+WARN	duplicate_scoped_synonym	FBbt:00003634	has_related_synonym	VFS
+WARN	duplicate_scoped_synonym	FBbt:00003776	has_exact_synonym	Mi1
+WARN	duplicate_scoped_synonym	FBbt:00003776	has_related_synonym	Mi1
+WARN	duplicate_scoped_synonym	FBbt:00003993	has_exact_synonym	FAI
+WARN	duplicate_scoped_synonym	FBbt:00003993	has_related_synonym	FAI
+WARN	duplicate_scoped_synonym	FBbt:00003994	has_exact_synonym	GSI
+WARN	duplicate_scoped_synonym	FBbt:00003994	has_related_synonym	GSI
+WARN	duplicate_scoped_synonym	FBbt:00003996	has_exact_synonym	TI
+WARN	duplicate_scoped_synonym	FBbt:00003996	has_related_synonym	TI
+WARN	duplicate_scoped_synonym	FBbt:00067349	has_exact_synonym	adPN
+WARN	duplicate_scoped_synonym	FBbt:00067349	has_related_synonym	adPN
+WARN	duplicate_scoped_synonym	FBbt:00067362	has_exact_synonym	lPN
+WARN	duplicate_scoped_synonym	FBbt:00067362	has_related_synonym	lPN
+WARN	duplicate_scoped_synonym	FBbt:00110012	has_broad_synonym	Ir92a
+WARN	duplicate_scoped_synonym	FBbt:00110012	has_exact_synonym	Ir92a
+WARN	duplicate_scoped_synonym	FBbt:00110018	has_broad_synonym	Ir76a
+WARN	duplicate_scoped_synonym	FBbt:00110018	has_exact_synonym	Ir76a
+WARN	missing_synonymtype_declaration	obo:fbbt#BRAIN_NAME_ABV	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:fbbt#FORMULA	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:fbbt#INN	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:fbbt#IUPAC_NAME	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:fbbt#InChI	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:fbbt#SMILES	rdfs:subPropertyOf	
+WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
+WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
+WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
+WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
+WARN	annotation_whitespace	occurrent	has associated axiom(fol)	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
+WARN	annotation_whitespace	occurrent	has associated axiom(fol)	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
+WARN	annotation_whitespace	independent continuant	has associated axiom(fol)	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
+WARN	annotation_whitespace	independent continuant	has associated axiom(fol)	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
+WARN	annotation_whitespace	independent continuant	has associated axiom(fol)	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
+WARN	annotation_whitespace	spatial region	has associated axiom(fol)	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
+WARN	annotation_whitespace	spatial region	has associated axiom(fol)	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
+WARN	annotation_whitespace	temporal region	has associated axiom(fol)	(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 
+WARN	annotation_whitespace	temporal region	has associated axiom(fol)	(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 
+WARN	annotation_whitespace	temporal region	has associated axiom(fol)	(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 
+WARN	annotation_whitespace	two-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 
+WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 
+WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 
+WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 
+WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 
+WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 
+WARN	annotation_whitespace	process	has associated axiom(fol)	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
+WARN	annotation_whitespace	disposition	has associated axiom(fol)	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
+WARN	annotation_whitespace	disposition	has associated axiom(fol)	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
+WARN	annotation_whitespace	realizable entity	has associated axiom(fol)	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
+WARN	annotation_whitespace	realizable entity	has associated axiom(fol)	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
+WARN	annotation_whitespace	zero-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 
+WARN	annotation_whitespace	quality	has associated axiom(fol)	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
+WARN	annotation_whitespace	quality	has associated axiom(fol)	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
+WARN	annotation_whitespace	specifically dependent continuant	has associated axiom(fol)	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
+WARN	annotation_whitespace	role	has associated axiom(fol)	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
+WARN	annotation_whitespace	fiat object part	has associated axiom(fol)	(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 
+WARN	annotation_whitespace	one-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 
+WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
+WARN	annotation_whitespace	object aggregate	has associated axiom(fol)	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
+WARN	annotation_whitespace	three-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 
+WARN	annotation_whitespace	site	has associated axiom(fol)	(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 
+WARN	annotation_whitespace	generically dependent continuant	has associated axiom(fol)	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
+WARN	annotation_whitespace	function	has associated axiom(fol)	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
+WARN	annotation_whitespace	process boundary	has associated axiom(fol)	(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 
+WARN	annotation_whitespace	process boundary	has associated axiom(fol)	(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 
+WARN	annotation_whitespace	one-dimensional temporal region	has associated axiom(fol)	(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 
+WARN	annotation_whitespace	material entity	has associated axiom(fol)	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
+WARN	annotation_whitespace	material entity	has associated axiom(fol)	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
+WARN	annotation_whitespace	material entity	has associated axiom(fol)	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
+WARN	annotation_whitespace	continuant fiat boundary	has associated axiom(fol)	(iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 
+WARN	annotation_whitespace	one-dimensional continuant fiat boundary	has associated axiom(fol)	(iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 
+WARN	annotation_whitespace	process profile	has associated axiom(fol)	(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 
+WARN	annotation_whitespace	process profile	has associated axiom(fol)	(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 
+WARN	annotation_whitespace	relational quality	has associated axiom(fol)	(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 
+WARN	annotation_whitespace	two-dimensional continuant fiat boundary	has associated axiom(fol)	(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 
+WARN	annotation_whitespace	zero-dimensional continuant fiat boundary	has associated axiom(fol)	(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 
+WARN	annotation_whitespace	zero-dimensional temporal region	has associated axiom(fol)	(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 
+WARN	annotation_whitespace	anatomical line	example of usage	A line between two points where these are typically used to measure some aspect of morphology, such as the distance between the eyes or the length of a leg. 
+WARN	annotation_whitespace	anatomical point	example of usage	The tip of the nose or other material anatomical entity, or the end of an anatomical line. 
+WARN	annotation_whitespace	extraembryonic structure	rdfs:comment	"MH: define as not part of embryo, or will not develop into embryo? MH: changed def to exclude cells so this class could be included in gross anatomical part. DOS: Changed to something that I think works for both vertebrates and invertebrates and that keeps the restriction to multicellular structures.  Old def: \""Anatomical structure that is contiguous with the embryo and is comprised of portions of tissue that will not contribute to the embryo.\"".  One remaining question - perhaps zygote is too restrictive given that some organisms have parthenogenesis e.g. aphids?
+"
+WARN	annotation_whitespace	anatomical group	definition	"Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.
+"
+WARN	annotation_whitespace	anatomical surface	definition	"A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment.  Examples include the surface of your skin, the surface of the lining of your gut; the surface of the endothelium of you aorta that is in contact with blood.
+@en"
+WARN	annotation_whitespace	gross anatomical part	definition	Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. 
+WARN	annotation_whitespace	cellular organism	rdfs:comment	A general term for organism that is agnostic about single cell vs multi-cellular.  Note that this is a subclass of 'anatomical structure', meaning that an organism must be a connected structure. For example, if I take one plant and make a rooted cutting from a it, I now have two (clonally related) organisms. 
+WARN	annotation_whitespace	FBbt:00000595	has_exact_synonym	muscle 26 - ventro-lateral external oblique 
+WARN	annotation_whitespace	FBbt:00000596	has_exact_synonym	muscle 27 - ventro-lateral external oblique 
+WARN	annotation_whitespace	FBbt:00000597	has_exact_synonym	muscle 29 - ventral external oblique 
+WARN	annotation_whitespace	FBbt:00000600	has_exact_synonym	muscle 4 - dorso-lateral internal longitudinal 
+WARN	annotation_whitespace	FBbt:00000602	has_exact_synonym	muscle 12 - pleural external longitudinal 
+WARN	annotation_whitespace	FBbt:00000603	has_exact_synonym	muscle 13 - pleural external longitudinal 
+WARN	annotation_whitespace	FBbt:00000604	has_exact_synonym	muscle 6 - ventral internal longitudinal 
+WARN	annotation_whitespace	FBbt:00000605	has_exact_synonym	muscle 7 - ventral internal longitudinal 
+WARN	annotation_whitespace	FBbt:00000606	has_exact_synonym	muscle 8 - pleural internal transverse 
+WARN	annotation_whitespace	FBbt:00000613	has_exact_synonym	muscle 20 - dorso-lateral external longitudinal 
+WARN	annotation_whitespace	FBbt:00000617	has_exact_synonym	muscle 14 - ventral external oblique 
+WARN	annotation_whitespace	FBbt:00000619	has_exact_synonym	muscle 28 - ventral external oblique 
+WARN	annotation_whitespace	FBbt:00000620	has_exact_synonym	muscle 15 - ventral external oblique 
+WARN	annotation_whitespace	FBbt:00000621	has_exact_synonym	muscle 16 - ventral external oblique 
+WARN	annotation_whitespace	FBbt:00000622	has_exact_synonym	muscle 17 - ventral external oblique 
+WARN	annotation_whitespace	FBbt:00000625	has_exact_synonym	muscle 18 - dorso-lateral external oblique 
+WARN	annotation_whitespace	FBbt:00000630	has_exact_synonym	muscle 19 - dorso-lateral external oblique 
+WARN	annotation_whitespace	FBbt:00011674	definition	Cardioblast associated with the developing cardiac outflow muscles in the embryo and that develops into the cardiac outflow tract. 
+WARN	annotation_whitespace	FBbt:00100203	has_exact_synonym	PLP 
+WARN	annotation_whitespace	FBbt:00100379	has_exact_synonym	 adPN
+WARN	annotation_whitespace	FBbt:00110017	definition	 Ipsilateral olfactory receptor neuron that expresses the ionotropic glutamate receptors (Ir) 75d (FBgn0036829) and the co-receptor Ir25a (FBgn0031634). It innervates the antennal lobe glomerulus VL1 (Silbering et al., 2011). Its dendrite transduces signals from the antennal coeloconic sensillum ac4. It is distinguishable from Ir75d ac1 and Ir75d ac2 by its odor response profile (Benton et al., 2009).
+WARN	annotation_whitespace	FBbt:00110061	has_related_synonym	 adult tachykinin neuron of the CNS
+WARN	annotation_whitespace	FBbt:00110064	has_related_synonym	 adult leucokinin neuron of the CNS
+WARN	annotation_whitespace	FBbt:00110072	definition	Subtype of the transmedullary neuron Tm5. It is very similar to the subtype Tm5b, differing from it by the size and shape of its arborisation, which is very extensive in medulla layer M6. It receives synaptic contacts from photoreceptor cell R7 and laminar cell L3 (Gao et al., 2008). 
+WARN	annotation_whitespace	PATO:0001241	has_exact_synonym	multiply inhering quality of a physical entity 
 WARN	missing_definition	BFO:0000066	definition	
 WARN	missing_definition	immaterial entity	definition	
 WARN	missing_definition	unpaired appendage	definition	
@@ -11781,243 +12018,6 @@ WARN	missing_definition	has_related_synonym	definition
 WARN	missing_definition	has_synonym_type	definition	
 WARN	missing_definition	in_subset	definition	
 WARN	missing_definition	has participant	definition	
-WARN	missing_obsolete_label	anatomical cluster	rdfs:label	anatomical cluster
-WARN	missing_obsolete_label	anatomical group	rdfs:label	anatomical group
-WARN	missing_obsolete_label	basal lamina	rdfs:label	basal lamina
-WARN	missing_obsolete_label	epithelial cell	rdfs:label	epithelial cell
-WARN	duplicate_scoped_synonym	CHEBI:16865	has_exact_synonym	4-aminobutanoic acid
-WARN	duplicate_scoped_synonym	CHEBI:16865	has_related_synonym	4-aminobutanoic acid
-WARN	duplicate_scoped_synonym	CHEBI:33567	has_exact_synonym	catecholamines
-WARN	duplicate_scoped_synonym	CHEBI:33567	has_related_synonym	catecholamines
-WARN	duplicate_scoped_synonym	CHEBI:35366	has_exact_synonym	fatty acids
-WARN	duplicate_scoped_synonym	CHEBI:35366	has_related_synonym	fatty acids
-WARN	duplicate_scoped_synonym	CHEBI:37622	has_exact_synonym	carboxamides
-WARN	duplicate_scoped_synonym	CHEBI:37622	has_related_synonym	carboxamides
-WARN	duplicate_scoped_synonym	FBbt:00001303	has_exact_synonym	neuropil associated CNS glial cell
-WARN	duplicate_scoped_synonym	FBbt:00001303	has_related_synonym	neuropil associated CNS glial cell
-WARN	duplicate_scoped_synonym	FBbt:00003634	has_exact_synonym	VFS
-WARN	duplicate_scoped_synonym	FBbt:00003634	has_related_synonym	VFS
-WARN	duplicate_scoped_synonym	FBbt:00003776	has_exact_synonym	Mi1
-WARN	duplicate_scoped_synonym	FBbt:00003776	has_related_synonym	Mi1
-WARN	duplicate_scoped_synonym	FBbt:00003993	has_exact_synonym	FAI
-WARN	duplicate_scoped_synonym	FBbt:00003993	has_related_synonym	FAI
-WARN	duplicate_scoped_synonym	FBbt:00003994	has_exact_synonym	GSI
-WARN	duplicate_scoped_synonym	FBbt:00003994	has_related_synonym	GSI
-WARN	duplicate_scoped_synonym	FBbt:00003996	has_exact_synonym	TI
-WARN	duplicate_scoped_synonym	FBbt:00003996	has_related_synonym	TI
-WARN	duplicate_scoped_synonym	FBbt:00067349	has_exact_synonym	adPN
-WARN	duplicate_scoped_synonym	FBbt:00067349	has_related_synonym	adPN
-WARN	duplicate_scoped_synonym	FBbt:00067362	has_exact_synonym	lPN
-WARN	duplicate_scoped_synonym	FBbt:00067362	has_related_synonym	lPN
-WARN	duplicate_scoped_synonym	FBbt:00110012	has_broad_synonym	Ir92a
-WARN	duplicate_scoped_synonym	FBbt:00110012	has_exact_synonym	Ir92a
-WARN	duplicate_scoped_synonym	FBbt:00110018	has_broad_synonym	Ir76a
-WARN	duplicate_scoped_synonym	FBbt:00110018	has_exact_synonym	Ir76a
-WARN	duplicate_exact_synonym	FBbt:00001693	has_exact_synonym	wreath cell
-WARN	duplicate_exact_synonym	FBbt:00005059	has_exact_synonym	wreath cell
-WARN	duplicate_exact_synonym	FBbt:00002823	has_exact_synonym	v'ch1
-WARN	duplicate_exact_synonym	FBbt:00100024	has_exact_synonym	v'ch1
-WARN	duplicate_exact_synonym	FBbt:00003896	has_exact_synonym	Tlp6
-WARN	duplicate_exact_synonym	FBbt:00003900	has_exact_synonym	Tlp6
-WARN	duplicate_exact_synonym	FBbt:00110037	has_exact_synonym	tachykinin descending neuron
-WARN	duplicate_exact_synonym	FBbt:00110049	has_exact_synonym	tachykinin descending neuron
-WARN	duplicate_exact_synonym	FBbt:00000538	has_exact_synonym	T2 SBM
-WARN	duplicate_exact_synonym	FBbt:00000573	has_exact_synonym	T2 SBM
-WARN	duplicate_exact_synonym	FBbt:00000538	has_exact_synonym	T2 pit
-WARN	duplicate_exact_synonym	FBbt:00000573	has_exact_synonym	T2 pit
-WARN	duplicate_exact_synonym	FBbt:00007075	has_exact_synonym	superior arch
-WARN	duplicate_exact_synonym	FBbt:00007493	has_exact_synonym	superior arch
-WARN	duplicate_exact_synonym	FBbt:00004013	has_exact_synonym	suboesophageal ganglion
-WARN	duplicate_exact_synonym	FBbt:00014013	has_exact_synonym	suboesophageal ganglion
-WARN	duplicate_exact_synonym	FBbt:00001982	has_exact_synonym	subesophageal ganglion SE neuron 3
-WARN	duplicate_exact_synonym	FBbt:00100392	has_exact_synonym	subesophageal ganglion SE neuron 3
-WARN	duplicate_exact_synonym	FBbt:00001982	has_exact_synonym	subesophageal ganglion neuron 3
-WARN	duplicate_exact_synonym	FBbt:00100392	has_exact_synonym	subesophageal ganglion neuron 3
-WARN	duplicate_exact_synonym	FBbt:00000969	has_exact_synonym	srm
-WARN	duplicate_exact_synonym	FBbt:00000970	has_exact_synonym	srm
-WARN	duplicate_exact_synonym	FBbt:00000970	has_exact_synonym	spiracle retractor muscle
-WARN	duplicate_exact_synonym	FBbt:00000971	has_exact_synonym	spiracle retractor muscle
-WARN	duplicate_exact_synonym	FBbt:00003359	has_exact_synonym	somatic muscle of mesothorax
-WARN	duplicate_exact_synonym	FBbt:00003417	has_exact_synonym	somatic muscle of mesothorax
-WARN	duplicate_exact_synonym	FBbt:00004013	has_exact_synonym	SOG
-WARN	duplicate_exact_synonym	FBbt:00014013	has_exact_synonym	SOG
-WARN	duplicate_exact_synonym	FBbt:00110040	has_exact_synonym	pupal LPP2 neuron
-WARN	duplicate_exact_synonym	FBbt:00110042	has_exact_synonym	pupal LPP2 neuron
-WARN	duplicate_exact_synonym	FBbt:00003625	has_exact_synonym	perikaryal rind
-WARN	duplicate_exact_synonym	FBbt:00007114	has_exact_synonym	perikaryal rind
-WARN	duplicate_exact_synonym	FBbt:00067044	has_exact_synonym	ORN (Or82a)
-WARN	duplicate_exact_synonym	FBbt:00100436	has_exact_synonym	ORN (Or82a)
-WARN	duplicate_exact_synonym	FBbt:00067023	has_exact_synonym	ORN (Or67b)
-WARN	duplicate_exact_synonym	FBbt:00100434	has_exact_synonym	ORN (Or67b)
-WARN	duplicate_exact_synonym	FBbt:00067046	has_exact_synonym	ORN (Or42b)
-WARN	duplicate_exact_synonym	FBbt:00100427	has_exact_synonym	ORN (Or42b)
-WARN	duplicate_exact_synonym	FBbt:00067042	has_exact_synonym	ORN (Or42a)
-WARN	duplicate_exact_synonym	FBbt:00100426	has_exact_synonym	ORN (Or42a)
-WARN	duplicate_exact_synonym	FBbt:00067039	has_exact_synonym	ORN (Or35a)
-WARN	duplicate_exact_synonym	FBbt:00100425	has_exact_synonym	ORN (Or35a)
-WARN	duplicate_exact_synonym	FBbt:00067016	has_exact_synonym	ORN (Or13a)
-WARN	duplicate_exact_synonym	FBbt:00100419	has_exact_synonym	ORN (Or13a)
-WARN	duplicate_exact_synonym	FBbt:00004043	has_exact_synonym	MxN
-WARN	duplicate_exact_synonym	FBbt:00100334	has_exact_synonym	MxN
-WARN	duplicate_exact_synonym	FBbt:00007482	has_exact_synonym	mmlAPT projection neuron
-WARN	duplicate_exact_synonym	FBbt:00100225	has_exact_synonym	mmlAPT projection neuron
-WARN	duplicate_exact_synonym	FBbt:00000576	has_exact_synonym	metathoracic pleural external transverse muscle
-WARN	duplicate_exact_synonym	FBbt:00000577	has_exact_synonym	metathoracic pleural external transverse muscle
-WARN	duplicate_exact_synonym	FBbt:00000578	has_exact_synonym	metathoracic pleural external transverse muscle
-WARN	duplicate_exact_synonym	FBbt:00000579	has_exact_synonym	metathoracic pleural external transverse muscle
-WARN	duplicate_exact_synonym	FBbt:00100226	has_exact_synonym	MB-C1
-WARN	duplicate_exact_synonym	FBbt:00100240	has_exact_synonym	MB-C1
-WARN	duplicate_exact_synonym	FBbt:00001939	has_exact_synonym	lpo
-WARN	duplicate_exact_synonym	FBbt:00002688	has_exact_synonym	lpo
-WARN	duplicate_exact_synonym	FBbt:00001948	has_exact_synonym	lobula plate cell body rind
-WARN	duplicate_exact_synonym	FBbt:00100208	has_exact_synonym	lobula plate cell body rind
-WARN	duplicate_exact_synonym	FBbt:00000382	has_exact_synonym	LH
-WARN	duplicate_exact_synonym	FBbt:00007053	has_exact_synonym	LH
-WARN	duplicate_exact_synonym	FBbt:00002823	has_exact_synonym	lch1x
-WARN	duplicate_exact_synonym	FBbt:00100024	has_exact_synonym	lch1x
-WARN	duplicate_exact_synonym	FBbt:00000399	has_exact_synonym	LC
-WARN	duplicate_exact_synonym	FBbt:00100007	has_exact_synonym	LC
-WARN	duplicate_exact_synonym	FBbt:00001966	has_exact_synonym	LbrN
-WARN	duplicate_exact_synonym	FBbt:00100327	has_exact_synonym	LbrN
-WARN	duplicate_exact_synonym	FBbt:00100328	has_exact_synonym	LbrN
-WARN	duplicate_exact_synonym	FBbt:00001978	has_exact_synonym	LbN
-WARN	duplicate_exact_synonym	FBbt:00100333	has_exact_synonym	LbN
-WARN	duplicate_exact_synonym	FBbt:00100351	has_exact_synonym	interantennal lobe tract
-WARN	duplicate_exact_synonym	FBbt:00100352	has_exact_synonym	interantennal lobe tract
-WARN	duplicate_exact_synonym	FBbt:00100351	has_exact_synonym	inter-antennal lobe tract
-WARN	duplicate_exact_synonym	FBbt:00100352	has_exact_synonym	inter-antennal lobe tract
-WARN	duplicate_exact_synonym	FBbt:00001002	has_exact_synonym	GS2
-WARN	duplicate_exact_synonym	FBbt:00004182	has_exact_synonym	GS2
-WARN	duplicate_exact_synonym	FBbt:00001001	has_exact_synonym	GS1
-WARN	duplicate_exact_synonym	FBbt:00004181	has_exact_synonym	GS1
-WARN	duplicate_exact_synonym	FBbt:00002630	has_exact_synonym	frontal nerve
-WARN	duplicate_exact_synonym	FBbt:00100330	has_exact_synonym	frontal nerve
-WARN	duplicate_exact_synonym	FBbt:00003685	has_exact_synonym	CA
-WARN	duplicate_exact_synonym	FBbt:00007118	has_exact_synonym	CA
-WARN	duplicate_exact_synonym	FBbt:00100254	has_exact_synonym	beta'p
-WARN	duplicate_exact_synonym	FBbt:00100271	has_exact_synonym	beta'p
-WARN	duplicate_exact_synonym	FBbt:00100253	has_exact_synonym	beta'm
-WARN	duplicate_exact_synonym	FBbt:00100270	has_exact_synonym	beta'm
-WARN	duplicate_exact_synonym	FBbt:00100250	has_exact_synonym	beta'a
-WARN	duplicate_exact_synonym	FBbt:00100269	has_exact_synonym	beta'a
-WARN	duplicate_exact_synonym	FBbt:00100749	has_exact_synonym	basolateral ventral neuroblast
-WARN	duplicate_exact_synonym	FBbt:00100750	has_exact_synonym	basolateral ventral neuroblast
-WARN	duplicate_exact_synonym	FBbt:00110037	has_exact_synonym	anterior large descending neuron DN
-WARN	duplicate_exact_synonym	FBbt:00110049	has_exact_synonym	anterior large descending neuron DN
-WARN	duplicate_exact_synonym	FBbt:00003980	has_exact_synonym	AN
-WARN	duplicate_exact_synonym	FBbt:00006045	has_exact_synonym	AN
-WARN	duplicate_exact_synonym	FBbt:00100254	has_exact_synonym	alpha'p
-WARN	duplicate_exact_synonym	FBbt:00100268	has_exact_synonym	alpha'p
-WARN	duplicate_exact_synonym	FBbt:00100253	has_exact_synonym	alpha'm
-WARN	duplicate_exact_synonym	FBbt:00100267	has_exact_synonym	alpha'm
-WARN	duplicate_exact_synonym	FBbt:00100250	has_exact_synonym	alpha'a
-WARN	duplicate_exact_synonym	FBbt:00100266	has_exact_synonym	alpha'a
-WARN	duplicate_exact_synonym	FBbt:00100282	has_exact_synonym	alpha lobe base
-WARN	duplicate_exact_synonym	FBbt:00100285	has_exact_synonym	alpha lobe base
-WARN	missing_subset_declaration	obo:fbbt#BrainName	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#BrainName_Embargo	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#EmbDevSlim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#FB_gloss	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#FT_new	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#FlyTed	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#RD	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#cur	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#deprecated	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#hidden_assertion	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:fbbt#larval_OF	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:fbbt#BRAIN_NAME_ABV	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:fbbt#FORMULA	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:fbbt#INN	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:fbbt#IUPAC_NAME	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:fbbt#InChI	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:fbbt#SMILES	rdfs:subPropertyOf	
-WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
-WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
-WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
-WARN	annotation_whitespace	continuant	has associated axiom(fol)	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
-WARN	annotation_whitespace	occurrent	has associated axiom(fol)	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
-WARN	annotation_whitespace	occurrent	has associated axiom(fol)	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
-WARN	annotation_whitespace	independent continuant	has associated axiom(fol)	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
-WARN	annotation_whitespace	independent continuant	has associated axiom(fol)	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
-WARN	annotation_whitespace	independent continuant	has associated axiom(fol)	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
-WARN	annotation_whitespace	spatial region	has associated axiom(fol)	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
-WARN	annotation_whitespace	spatial region	has associated axiom(fol)	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
-WARN	annotation_whitespace	temporal region	has associated axiom(fol)	(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 
-WARN	annotation_whitespace	temporal region	has associated axiom(fol)	(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 
-WARN	annotation_whitespace	temporal region	has associated axiom(fol)	(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 
-WARN	annotation_whitespace	two-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 
-WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 
-WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 
-WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 
-WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 
-WARN	annotation_whitespace	spatiotemporal region	has associated axiom(fol)	(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 
-WARN	annotation_whitespace	process	has associated axiom(fol)	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
-WARN	annotation_whitespace	disposition	has associated axiom(fol)	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
-WARN	annotation_whitespace	disposition	has associated axiom(fol)	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
-WARN	annotation_whitespace	realizable entity	has associated axiom(fol)	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
-WARN	annotation_whitespace	realizable entity	has associated axiom(fol)	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
-WARN	annotation_whitespace	zero-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 
-WARN	annotation_whitespace	quality	has associated axiom(fol)	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
-WARN	annotation_whitespace	quality	has associated axiom(fol)	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
-WARN	annotation_whitespace	specifically dependent continuant	has associated axiom(fol)	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
-WARN	annotation_whitespace	role	has associated axiom(fol)	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
-WARN	annotation_whitespace	fiat object part	has associated axiom(fol)	(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 
-WARN	annotation_whitespace	one-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 
-WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
-WARN	annotation_whitespace	object aggregate	has associated axiom(fol)	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
-WARN	annotation_whitespace	three-dimensional spatial region	has associated axiom(fol)	(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 
-WARN	annotation_whitespace	site	has associated axiom(fol)	(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 
-WARN	annotation_whitespace	generically dependent continuant	has associated axiom(fol)	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
-WARN	annotation_whitespace	function	has associated axiom(fol)	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
-WARN	annotation_whitespace	process boundary	has associated axiom(fol)	(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 
-WARN	annotation_whitespace	process boundary	has associated axiom(fol)	(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 
-WARN	annotation_whitespace	one-dimensional temporal region	has associated axiom(fol)	(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 
-WARN	annotation_whitespace	material entity	has associated axiom(fol)	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
-WARN	annotation_whitespace	material entity	has associated axiom(fol)	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
-WARN	annotation_whitespace	material entity	has associated axiom(fol)	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	continuant fiat boundary	has associated axiom(fol)	(iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 
-WARN	annotation_whitespace	one-dimensional continuant fiat boundary	has associated axiom(fol)	(iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 
-WARN	annotation_whitespace	process profile	has associated axiom(fol)	(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 
-WARN	annotation_whitespace	process profile	has associated axiom(fol)	(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 
-WARN	annotation_whitespace	relational quality	has associated axiom(fol)	(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 
-WARN	annotation_whitespace	two-dimensional continuant fiat boundary	has associated axiom(fol)	(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 
-WARN	annotation_whitespace	zero-dimensional continuant fiat boundary	has associated axiom(fol)	(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 
-WARN	annotation_whitespace	zero-dimensional temporal region	has associated axiom(fol)	(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 
-WARN	annotation_whitespace	anatomical line	example of usage	A line between two points where these are typically used to measure some aspect of morphology, such as the distance between the eyes or the length of a leg. 
-WARN	annotation_whitespace	anatomical point	example of usage	The tip of the nose or other material anatomical entity, or the end of an anatomical line. 
-WARN	annotation_whitespace	extraembryonic structure	rdfs:comment	"MH: define as not part of embryo, or will not develop into embryo? MH: changed def to exclude cells so this class could be included in gross anatomical part. DOS: Changed to something that I think works for both vertebrates and invertebrates and that keeps the restriction to multicellular structures.  Old def: \""Anatomical structure that is contiguous with the embryo and is comprised of portions of tissue that will not contribute to the embryo.\"".  One remaining question - perhaps zygote is too restrictive given that some organisms have parthenogenesis e.g. aphids?
-"
-WARN	annotation_whitespace	anatomical group	definition	"Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.
-"
-WARN	annotation_whitespace	anatomical surface	definition	"A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment.  Examples include the surface of your skin, the surface of the lining of your gut; the surface of the endothelium of you aorta that is in contact with blood.
-@en"
-WARN	annotation_whitespace	gross anatomical part	definition	Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. 
-WARN	annotation_whitespace	cellular organism	rdfs:comment	A general term for organism that is agnostic about single cell vs multi-cellular.  Note that this is a subclass of 'anatomical structure', meaning that an organism must be a connected structure. For example, if I take one plant and make a rooted cutting from a it, I now have two (clonally related) organisms. 
-WARN	annotation_whitespace	FBbt:00000595	has_exact_synonym	muscle 26 - ventro-lateral external oblique 
-WARN	annotation_whitespace	FBbt:00000596	has_exact_synonym	muscle 27 - ventro-lateral external oblique 
-WARN	annotation_whitespace	FBbt:00000597	has_exact_synonym	muscle 29 - ventral external oblique 
-WARN	annotation_whitespace	FBbt:00000600	has_exact_synonym	muscle 4 - dorso-lateral internal longitudinal 
-WARN	annotation_whitespace	FBbt:00000602	has_exact_synonym	muscle 12 - pleural external longitudinal 
-WARN	annotation_whitespace	FBbt:00000603	has_exact_synonym	muscle 13 - pleural external longitudinal 
-WARN	annotation_whitespace	FBbt:00000604	has_exact_synonym	muscle 6 - ventral internal longitudinal 
-WARN	annotation_whitespace	FBbt:00000605	has_exact_synonym	muscle 7 - ventral internal longitudinal 
-WARN	annotation_whitespace	FBbt:00000606	has_exact_synonym	muscle 8 - pleural internal transverse 
-WARN	annotation_whitespace	FBbt:00000613	has_exact_synonym	muscle 20 - dorso-lateral external longitudinal 
-WARN	annotation_whitespace	FBbt:00000617	has_exact_synonym	muscle 14 - ventral external oblique 
-WARN	annotation_whitespace	FBbt:00000619	has_exact_synonym	muscle 28 - ventral external oblique 
-WARN	annotation_whitespace	FBbt:00000620	has_exact_synonym	muscle 15 - ventral external oblique 
-WARN	annotation_whitespace	FBbt:00000621	has_exact_synonym	muscle 16 - ventral external oblique 
-WARN	annotation_whitespace	FBbt:00000622	has_exact_synonym	muscle 17 - ventral external oblique 
-WARN	annotation_whitespace	FBbt:00000625	has_exact_synonym	muscle 18 - dorso-lateral external oblique 
-WARN	annotation_whitespace	FBbt:00000630	has_exact_synonym	muscle 19 - dorso-lateral external oblique 
-WARN	annotation_whitespace	FBbt:00011674	definition	Cardioblast associated with the developing cardiac outflow muscles in the embryo and that develops into the cardiac outflow tract. 
-WARN	annotation_whitespace	FBbt:00100203	has_exact_synonym	PLP 
-WARN	annotation_whitespace	FBbt:00100379	has_exact_synonym	 adPN
-WARN	annotation_whitespace	FBbt:00110017	definition	 Ipsilateral olfactory receptor neuron that expresses the ionotropic glutamate receptors (Ir) 75d (FBgn0036829) and the co-receptor Ir25a (FBgn0031634). It innervates the antennal lobe glomerulus VL1 (Silbering et al., 2011). Its dendrite transduces signals from the antennal coeloconic sensillum ac4. It is distinguishable from Ir75d ac1 and Ir75d ac2 by its odor response profile (Benton et al., 2009).
-WARN	annotation_whitespace	FBbt:00110061	has_related_synonym	 adult tachykinin neuron of the CNS
-WARN	annotation_whitespace	FBbt:00110064	has_related_synonym	 adult leucokinin neuron of the CNS
-WARN	annotation_whitespace	FBbt:00110072	definition	Subtype of the transmedullary neuron Tm5. It is very similar to the subtype Tm5b, differing from it by the size and shape of its arborisation, which is very extensive in medulla layer M6. It receives synaptic contacts from photoreceptor cell R7 and laminar cell L3 (Gao et al., 2008). 
-WARN	annotation_whitespace	PATO:0001241	has_exact_synonym	multiply inhering quality of a physical entity 
 INFO	missing_superclass	connected anatomical structure	rdfs:subClassOf	
 INFO	missing_superclass	acellular anatomical structure	rdfs:subClassOf	
 INFO	missing_superclass	cell space	rdfs:subClassOf	

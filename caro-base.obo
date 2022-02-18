@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: caro/releases/2022-02-17/caro-base.owl
+data-version: caro/releases/2022-02-18/caro-base.owl
 subsetdef: core "CARO2 core class"
 subsetdef: olfactory_system_draft "adult olfactory system model"
 subsetdef: plus "CARO2 plus class"
@@ -11,7 +11,7 @@ property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Common Anatomy Reference Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2022-02-17" xsd:string
+property_value: owl:versionInfo "2022-02-18" xsd:string
 
 [Term]
 id: BFO:0000001

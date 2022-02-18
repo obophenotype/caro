@@ -16,12 +16,12 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboInOwl1="ttp://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/caro/caro-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/caro/releases/2022-02-17/caro-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/caro/releases/2022-02-18/caro-simple.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Common Anatomy Reference Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <rdfs:comment>Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-17</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -357,9 +357,39 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/member -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/member"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 

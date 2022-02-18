@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2022-02-17
+data-version: releases/2022-02-18
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -40,7 +40,7 @@ ontology: caro
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Common Anatomy Reference Ontology" xsd:string
-property_value: owl:versionInfo "2022-02-17" xsd:string
+property_value: owl:versionInfo "2022-02-18" xsd:string
 
 [Term]
 id: BFO:0000001
