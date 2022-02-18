@@ -12,9 +12,9 @@ synonymtypedef: InChIKey ""
 synonymtypedef: systematic_synonym "" EXACT
 remark: Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.
 ontology: caro/caro-simple
+property_value: dc-description "None" xsd:string
+property_value: dc-title "Common Anatomy Reference Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Common Anatomy Reference Ontology" xsd:string
 property_value: owl:versionInfo "2022-02-18" xsd:string
 
 [Term]
@@ -730,19 +730,31 @@ property_value: RO:0001900 RO:0001901
 is_inverse_functional: true
 
 [Typedef]
-id: curator_notes
-name: curator note
-name: curator notes
-namespace: uberon
-xref: IAO:0000232
-property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
-is_metadata_tag: true
-
-[Typedef]
 id: dc-contributor
 name: contributor
 namespace: uberon
 xref: http://purl.org/dc/elements/1.1/contributor
+is_metadata_tag: true
+
+[Typedef]
+id: dc-creator
+name: creator
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/creator
+is_metadata_tag: true
+
+[Typedef]
+id: dc-description
+name: description
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/description
+is_metadata_tag: true
+
+[Typedef]
+id: dc-title
+name: title
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/title
 is_metadata_tag: true
 
 [Typedef]
@@ -766,13 +778,6 @@ name: example of usage
 namespace: uberon
 xref: IAO:0000112
 property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
-is_metadata_tag: true
-
-[Typedef]
-id: foaf-homepage
-name: homepage
-namespace: uberon
-xref: http://xmlns.com/foaf/0.1/homepage
 is_metadata_tag: true
 
 [Typedef]
@@ -801,9 +806,9 @@ namespace: uberon
 def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
 subset: ro-eco
 xref: RO:0002180
-property_value: curator_notes "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: editor_note "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity." xsd:string
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
 is_a: has_part ! has part
@@ -865,11 +870,4 @@ property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartO
 property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
 inverse_of: has_part ! has part
-
-[Typedef]
-id: seeAlso
-name: see also
-namespace: uberon
-xref: http://www.w3.org/2000/01/rdf-schema#seeAlso
-is_metadata_tag: true
 

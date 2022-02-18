@@ -37,9 +37,9 @@ synonymtypedef: InChIKey ""
 synonymtypedef: systematic_synonym "" EXACT
 remark: Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.
 ontology: caro
+property_value: dc-description "None" xsd:string
+property_value: dc-title "Common Anatomy Reference Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Common Anatomy Reference Ontology" xsd:string
 property_value: owl:versionInfo "2022-02-18" xsd:string
 
 [Term]
@@ -103,7 +103,6 @@ def: "A continuant that is a bearer of quality and realizable entity entities, i
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
-disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: part_of BFO:0000004 ! independent continuant
 property_value: BFO:0000179 "ic" xsd:string
 property_value: BFO:0000180 "IndependentContinuant" xsd:string
@@ -129,7 +128,6 @@ id: BFO:0000006
 name: spatial region
 is_a: BFO:0000141 ! immaterial entity
 disjoint_from: BFO:0000029 ! site
-disjoint_from: BFO:0000140 ! continuant fiat boundary
 property_value: BFO:0000179 "s-region" xsd:string
 property_value: BFO:0000180 "SpatialRegion" xsd:string
 property_value: editor_note "BFO 2 Reference: Spatial regions do not participate in processes." xsd:string
@@ -141,56 +139,15 @@ property_value: IAO:0000602 "(forall (x) (if (SpatialRegion x) (Continuant x))) 
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
-id: BFO:0000008
-name: temporal region
-is_a: BFO:0000003 ! occurrent
-disjoint_from: BFO:0000011 ! spatiotemporal region
-disjoint_from: BFO:0000015 ! process
-disjoint_from: BFO:0000035 ! process boundary
-property_value: BFO:0000179 "t-region" xsd:string
-property_value: BFO:0000180 "TemporalRegion" xsd:string
-property_value: editor_note "Temporal region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn't overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000003", comment="per discussion with Barry Smith"}
-property_value: IAO:0000600 "A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/100-001"}
-property_value: IAO:0000601 "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/101-001"}
-property_value: IAO:0000601 "Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/119-002"}
-property_value: IAO:0000602 "(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/119-002"}
-property_value: IAO:0000602 "(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/101-001"}
-property_value: IAO:0000602 "(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/100-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
 id: BFO:0000009
 name: two-dimensional spatial region
 is_a: BFO:0000006 ! spatial region
-disjoint_from: BFO:0000028 ! three-dimensional spatial region
 property_value: BFO:0000179 "2d-s-region" xsd:string
 property_value: BFO:0000180 "TwoDimensionalSpatialRegion" xsd:string
 property_value: example_of_usage "an infinitely thin plane in space." xsd:string
 property_value: example_of_usage "the surface of a sphere-shaped part of space" xsd:string
 property_value: IAO:0000600 "A two-dimensional spatial region is a spatial region that is of two dimensions. (axiom label in BFO2 Reference: [039-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/039-001"}
 property_value: IAO:0000602 "(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/039-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000011
-name: spatiotemporal region
-is_a: BFO:0000003 ! occurrent
-property_value: BFO:0000179 "st-region" xsd:string
-property_value: BFO:0000180 "SpatiotemporalRegion" xsd:string
-property_value: example_of_usage "the spatiotemporal region occupied by a human life" xsd:string
-property_value: example_of_usage "the spatiotemporal region occupied by a process of cellular meiosis." xsd:string
-property_value: example_of_usage "the spatiotemporal region occupied by the development of a cancer tumor" xsd:string
-property_value: IAO:0000600 "A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/095-001"}
-property_value: IAO:0000601 "All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/096-001"}
-property_value: IAO:0000601 "Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/099-001"}
-property_value: IAO:0000601 "Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/098-001"}
-property_value: IAO:0000601 "Every spatiotemporal region occupies_spatiotemporal_region itself." xsd:string
-property_value: IAO:0000601 "Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/107-002"}
-property_value: IAO:0000602 "(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/107-002"}
-property_value: IAO:0000602 "(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/099-001"}
-property_value: IAO:0000602 "(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/096-001"}
-property_value: IAO:0000602 "(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/098-001"}
-property_value: IAO:0000602 "(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/095-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
@@ -255,7 +212,6 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000018
 name: zero-dimensional spatial region
 is_a: BFO:0000006 ! spatial region
-disjoint_from: BFO:0000028 ! three-dimensional spatial region
 property_value: BFO:0000179 "0d-s-region" xsd:string
 property_value: BFO:0000180 "ZeroDimensionalSpatialRegion" xsd:string
 property_value: IAO:0000600 "A zero-dimensional spatial region is a point in space. (axiom label in BFO2 Reference: [037-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/037-001"}
@@ -287,7 +243,6 @@ name: specifically dependent continuant
 def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/050-003"}
 is_a: BFO:0000002 ! continuant
-disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: part_of BFO:0000020 ! specifically dependent continuant
 property_value: BFO:0000179 "sdc" xsd:string
 property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
@@ -327,72 +282,14 @@ property_value: IAO:0000602 "(forall (x) (if (Role x) (RealizableEntity x))) // 
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
-id: BFO:0000024
-name: fiat object part
-is_a: BFO:0000040 ! material entity
-property_value: BFO:0000179 "fiat-object-part" xsd:string
-property_value: BFO:0000180 "FiatObjectPart" xsd:string
-property_value: editor_note "BFO 2 Reference: Most examples of fiat object parts are associated with theoretically drawn divisions" xsd:string
-property_value: example_of_usage "or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29" xsd:string
-property_value: example_of_usage "the division of the brain into regions" xsd:string
-property_value: example_of_usage "the division of the planet into hemispheres" xsd:string
-property_value: example_of_usage "the dorsal and ventral surfaces of the body" xsd:string
-property_value: example_of_usage "the FMA:regional parts of an intact human body." xsd:string
-property_value: example_of_usage "the upper and lower lobes of the left lung" xsd:string
-property_value: example_of_usage "the Western hemisphere of the Earth" xsd:string
-property_value: IAO:0000600 "b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/027-004"}
-property_value: IAO:0000602 "(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/027-004"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
 id: BFO:0000026
 name: one-dimensional spatial region
 is_a: BFO:0000006 ! spatial region
-disjoint_from: BFO:0000028 ! three-dimensional spatial region
 property_value: BFO:0000179 "1d-s-region" xsd:string
 property_value: BFO:0000180 "OneDimensionalSpatialRegion" xsd:string
 property_value: example_of_usage "an edge of a cube-shaped portion of space." xsd:string
 property_value: IAO:0000600 "A one-dimensional spatial region is a line or aggregate of lines stretching from one point in space to another. (axiom label in BFO2 Reference: [038-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/038-001"}
 property_value: IAO:0000602 "(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/038-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000027
-name: object aggregate
-is_a: BFO:0000040 ! material entity
-property_value: BFO:0000179 "object-aggregate" xsd:string
-property_value: BFO:0000180 "ObjectAggregate" xsd:string
-property_value: editor_note "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000301"}
-property_value: editor_note "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000011"}
-property_value: editor_note "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)." xsd:string
-property_value: example_of_usage "a collection of cells in a blood biobank." xsd:string
-property_value: example_of_usage "a swarm of bees is an aggregate of members who are linked together through natural bonds" xsd:string
-property_value: example_of_usage "a symphony orchestra" xsd:string
-property_value: example_of_usage "an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)" xsd:string
-property_value: example_of_usage "defined by fiat: the aggregate of members of an organization" xsd:string
-property_value: example_of_usage "defined through physical attachment: the aggregate of atoms in a lump of granite" xsd:string
-property_value: example_of_usage "defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container" xsd:string
-property_value: example_of_usage "defined via attributive delimitations such as: the patients in this hospital" xsd:string
-property_value: example_of_usage "the aggregate of bearings in a constant velocity axle joint" xsd:string
-property_value: example_of_usage "the aggregate of blood cells in your body" xsd:string
-property_value: example_of_usage "the nitrogen atoms in the atmosphere" xsd:string
-property_value: example_of_usage "the restaurants in Palo Alto" xsd:string
-property_value: example_of_usage "your collection of Meissen ceramic plates." xsd:string
-property_value: IAO:0000119 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158." xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000300"}
-property_value: IAO:0000600 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
-property_value: IAO:0000602 "(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000028
-name: three-dimensional spatial region
-is_a: BFO:0000006 ! spatial region
-property_value: BFO:0000179 "3d-s-region" xsd:string
-property_value: BFO:0000180 "ThreeDimensionalSpatialRegion" xsd:string
-property_value: example_of_usage "a cube-shaped region of space" xsd:string
-property_value: example_of_usage "a sphere-shaped region of space," xsd:string
-property_value: IAO:0000600 "A three-dimensional spatial region is a spatial region that is of three dimensions. (axiom label in BFO2 Reference: [040-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/040-001"}
-property_value: IAO:0000602 "(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/040-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
@@ -421,46 +318,6 @@ property_value: IAO:0000602 "(forall (x) (if (Site x) (ImmaterialEntity x))) // 
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
-id: BFO:0000030
-name: object
-is_a: BFO:0000040 ! material entity
-property_value: BFO:0000179 "object" xsd:string
-property_value: BFO:0000180 "Object" xsd:string
-property_value: editor_note "BFO 2 Reference: an object is a maximal causally unified material entity" xsd:string
-property_value: editor_note "BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting." xsd:string
-property_value: editor_note "BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below)." xsd:string
-property_value: editor_note "BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47" xsd:string
-property_value: editor_note "BFO 2 Reference: ‘objects’ are sometimes referred to as ‘grains’ [74" xsd:string
-property_value: example_of_usage "atom" xsd:string
-property_value: example_of_usage "cell" xsd:string
-property_value: example_of_usage "cells and organisms" xsd:string
-property_value: example_of_usage "engineered artifacts" xsd:string
-property_value: example_of_usage "grain of sand" xsd:string
-property_value: example_of_usage "molecule" xsd:string
-property_value: example_of_usage "organelle" xsd:string
-property_value: example_of_usage "organism" xsd:string
-property_value: example_of_usage "planet" xsd:string
-property_value: example_of_usage "solid portions of matter" xsd:string
-property_value: example_of_usage "star" xsd:string
-property_value: IAO:0000600 "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/024-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000031
-name: generically dependent continuant
-def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
-def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
-is_a: BFO:0000002 ! continuant
-relationship: part_of BFO:0000031 ! generically dependent continuant
-property_value: BFO:0000179 "gdc" xsd:string
-property_value: BFO:0000180 "GenericallyDependentContinuant" xsd:string
-property_value: example_of_usage "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity." xsd:string
-property_value: example_of_usage "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop" xsd:string
-property_value: example_of_usage "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule." xsd:string
-property_value: IAO:0000602 "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
 id: BFO:0000034
 name: function
 is_a: BFO:0000016 ! disposition
@@ -472,32 +329,6 @@ property_value: example_of_usage "the function of a heart pacemaker to regulate 
 property_value: example_of_usage "the function of amylase in saliva to break down starch into sugar" xsd:string
 property_value: IAO:0000600 "A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/064-001"}
 property_value: IAO:0000602 "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/064-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000035
-name: process boundary
-def: "p is a process boundary =Def. p is a temporal part of a process & p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/084-001"}
-is_a: BFO:0000003 ! occurrent
-property_value: BFO:0000179 "p-boundary" xsd:string
-property_value: BFO:0000180 "ProcessBoundary" xsd:string
-property_value: example_of_usage "the boundary between the 2nd and 3rd year of your life." xsd:string
-property_value: IAO:0000601 "Every process boundary occupies_temporal_region a zero-dimensional temporal region. (axiom label in BFO2 Reference: [085-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/085-002"}
-property_value: IAO:0000602 "(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/085-002"}
-property_value: IAO:0000602 "(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/084-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000038
-name: one-dimensional temporal region
-is_a: BFO:0000008 ! temporal region
-disjoint_from: BFO:0000148 ! zero-dimensional temporal region
-property_value: BFO:0000179 "1d-t-region" xsd:string
-property_value: BFO:0000180 "OneDimensionalTemporalRegion" xsd:string
-property_value: editor_note "BFO 2 Reference: A temporal interval is a special kind of one-dimensional temporal region, namely one that is self-connected (is without gaps or breaks)." xsd:string
-property_value: example_of_usage "the temporal region during which a process occurs." xsd:string
-property_value: IAO:0000600 "A one-dimensional temporal region is a temporal region that is extended. (axiom label in BFO2 Reference: [103-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/103-001"}
-property_value: IAO:0000602 "(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/103-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
@@ -532,120 +363,12 @@ property_value: IAO:0000602 "(forall (x) (if (MaterialEntity x) (IndependentCont
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
-id: BFO:0000140
-name: continuant fiat boundary
-def: "b is a continuant fiat boundary = Def. b is an immaterial entity that is of zero, one or two dimensions and does not include a spatial region as part. (axiom label in BFO2 Reference: [029-001])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/029-001"}
-is_a: BFO:0000141 ! immaterial entity
-property_value: BFO:0000179 "cf-boundary" xsd:string
-property_value: BFO:0000180 "ContinuantFiatBoundary" xsd:string
-property_value: editor_note "BFO 2 Reference: a continuant fiat boundary is a boundary of some material entity (for example: the plane separating the Northern and Southern hemispheres; the North Pole), or it is a boundary of some immaterial entity (for example of some portion of airspace). Three basic kinds of continuant fiat boundary can be distinguished (together with various combination kinds [29" xsd:string
-property_value: editor_note "BFO 2 Reference: In BFO 1.1 the assumption was made that the external surface of a material entity such as a cell could be treated as if it were a boundary in the mathematical sense. The new document propounds the view that when we talk about external surfaces of material objects in this way then we are talking about something fiat. To be dealt with in a future version: fiat boundaries at different levels of granularity.More generally, the focus in discussion of boundaries in BFO 2.0 is now on fiat boundaries, which means: boundaries for which there is no assumption that they coincide with physical discontinuities. The ontology of boundaries becomes more closely allied with the ontology of regions." xsd:string
-property_value: editor_note "Continuant fiat boundary doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the mereological sum of two-dimensional continuant fiat boundary and a one dimensional continuant fiat boundary that doesn't overlap it. The situation is analogous to temporal and spatial regions." xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000008"}
-property_value: IAO:0000601 "Every continuant fiat boundary is located at some spatial region at every time at which it exists" xsd:string
-property_value: IAO:0000602 "(iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/029-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
 id: BFO:0000141
 name: immaterial entity
 is_a: BFO:0000004 ! independent continuant
 property_value: BFO:0000179 "immaterial" xsd:string
 property_value: BFO:0000180 "ImmaterialEntity" xsd:string
 property_value: editor_note "BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000142
-name: one-dimensional continuant fiat boundary
-is_a: BFO:0000140 ! continuant fiat boundary
-disjoint_from: BFO:0000146 ! two-dimensional continuant fiat boundary
-disjoint_from: BFO:0000147 ! zero-dimensional continuant fiat boundary
-property_value: BFO:0000179 "1d-cf-boundary" xsd:string
-property_value: BFO:0000180 "OneDimensionalContinuantFiatBoundary" xsd:string
-property_value: example_of_usage "all geopolitical boundaries" xsd:string
-property_value: example_of_usage "all lines of latitude and longitude" xsd:string
-property_value: example_of_usage "The Equator" xsd:string
-property_value: example_of_usage "the line separating the outer surface of the mucosa of the lower lip from the outer surface of the skin of the chin." xsd:string
-property_value: example_of_usage "the median sulcus of your tongue" xsd:string
-property_value: IAO:0000600 "a one-dimensional continuant fiat boundary is a continuous fiat line whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [032-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/032-001"}
-property_value: IAO:0000602 "(iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/032-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000144
-name: process profile
-def: "b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/093-002"}
-is_a: BFO:0000015 ! process
-disjoint_from: BFO:0000182 ! history
-property_value: BFO:0000179 "process-profile" xsd:string
-property_value: BFO:0000180 "ProcessProfile" xsd:string
-property_value: example_of_usage "On a somewhat higher level of complexity are what we shall call rate process profiles, which are the targets of selective abstraction focused not on determinate quality magnitudes plotted over time, but rather on certain ratios between these magnitudes and elapsed times. A speed process profile, for example, is represented by a graph plotting against time the ratio of distance covered per unit of time. Since rates may change, and since such changes, too, may have rates of change, we have to deal here with a hierarchy of process profile universals at successive levels" xsd:string
-property_value: example_of_usage "One important sub-family of rate process profiles is illustrated by the beat or frequency profiles of cyclical processes, illustrated by the 60 beats per minute beating process of John’s heart, or the 120 beats per minute drumming process involved in one of John’s performances in a rock band, and so on. Each such process includes what we shall call a beat process profile instance as part, a subtype of rate process profile in which the salient ratio is not distance covered but rather number of beat cycles per unit of time. Each beat process profile instance instantiates the determinable universal beat process profile. But it also instantiates multiple more specialized universals at lower levels of generality, selected from   rate process profilebeat process profileregular beat process profile3 bpm beat process profile4 bpm beat process profileirregular beat process profileincreasing beat process profileand so on.In the case of a regular beat process profile, a rate can be assigned in the simplest possible fashion by dividing the number of cycles by the length of the temporal region occupied by the beating process profile as a whole. Irregular process profiles of this sort, for example as identified in the clinic, or in the readings on an aircraft instrument panel, are often of diagnostic significance." xsd:string
-property_value: example_of_usage "The simplest type of process profiles are what we shall call ‘quality process profiles’, which are the process profiles which serve as the foci of the sort of selective abstraction that is involved when measurements are made of changes in single qualities, as illustrated, for example, by process profiles of mass, temperature, aortic pressure, and so on." xsd:string
-property_value: IAO:0000600 "b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/094-005"}
-property_value: IAO:0000602 "(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/094-005"}
-property_value: IAO:0000602 "(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/093-002"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000145
-name: relational quality
-def: "b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t & b quality_of d at t. (axiom label in BFO2 Reference: [057-001])" [] {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/057-001"}
-is_a: BFO:0000019 ! quality
-property_value: BFO:0000179 "r-quality" xsd:string
-property_value: BFO:0000180 "RelationalQuality" xsd:string
-property_value: example_of_usage "a marriage bond, an instance of requited love, an obligation between one person and another." xsd:string
-property_value: example_of_usage "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married." xsd:string
-property_value: IAO:0000602 "(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/057-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000146
-name: two-dimensional continuant fiat boundary
-is_a: BFO:0000140 ! continuant fiat boundary
-property_value: BFO:0000179 "2d-cf-boundary" xsd:string
-property_value: BFO:0000180 "TwoDimensionalContinuantFiatBoundary" xsd:string
-property_value: IAO:0000600 "a two-dimensional continuant fiat boundary (surface) is a self-connected fiat surface whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [033-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/033-001"}
-property_value: IAO:0000602 "(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/033-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000147
-name: zero-dimensional continuant fiat boundary
-is_a: BFO:0000140 ! continuant fiat boundary
-property_value: BFO:0000179 "0d-cf-boundary" xsd:string
-property_value: BFO:0000180 "ZeroDimensionalContinuantFiatBoundary" xsd:string
-property_value: editor_note "zero dimension continuant fiat boundaries are not spatial points. Considering the example 'the quadripoint where the boundaries of Colorado, Utah, New Mexico, and Arizona meet' : There are many frames in which that point is zooming through many points in space. Whereas, no matter what the frame, the quadripoint is always in the same relation to the boundaries of Colorado, Utah, New Mexico, and Arizona." xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000001", comment="requested by Melanie Courtot", http://www.w3.org/2000/01/rdf-schema#seeAlso="ZDRnpiIi:TUJ"}
-property_value: example_of_usage "the geographic North Pole" xsd:string
-property_value: example_of_usage "the point of origin of some spatial coordinate system." xsd:string
-property_value: example_of_usage "the quadripoint where the boundaries of Colorado, Utah, New Mexico, and Arizona meet" xsd:string
-property_value: IAO:0000600 "a zero-dimensional continuant fiat boundary is a fiat point whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [031-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/031-001"}
-property_value: IAO:0000602 "(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/031-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000148
-name: zero-dimensional temporal region
-is_a: BFO:0000008 ! temporal region
-property_value: BFO:0000179 "0d-t-region" xsd:string
-property_value: BFO:0000180 "ZeroDimensionalTemporalRegion" xsd:string
-property_value: example_of_usage "a temporal region that is occupied by a process boundary" xsd:string
-property_value: example_of_usage "right now" xsd:string
-property_value: example_of_usage "the moment at which a child is born" xsd:string
-property_value: example_of_usage "the moment at which a finger is detached in an industrial accident" xsd:string
-property_value: example_of_usage "the moment of death." xsd:string
-property_value: IAO:0000118 "temporal instant." xsd:string
-property_value: IAO:0000600 "A zero-dimensional temporal region is a temporal region that is without extent. (axiom label in BFO2 Reference: [102-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/102-001"}
-property_value: IAO:0000602 "(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/102-001"}
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Term]
-id: BFO:0000182
-name: history
-is_a: BFO:0000015 ! process
-property_value: BFO:0000179 "history" xsd:string
-property_value: BFO:0000180 "History" xsd:string
-property_value: IAO:0000600 "A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (axiom label in BFO2 Reference: [138-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/138-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
@@ -3975,8 +3698,8 @@ synonym: "primaeres Amin" RELATED [ChEBI]
 synonym: "primaeres Amin" RELATED [ChEBI:]
 synonym: "Primary amine" EXACT [KEGG_COMPOUND]
 synonym: "Primary amine" EXACT [KEGG COMPOUND:]
-synonym: "primary amines" EXACT IUPAC_NAME [IUPAC:]
 synonym: "primary amines" EXACT IUPAC_NAME [IUPAC]
+synonym: "primary amines" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Primary monoamine" RELATED [KEGG_COMPOUND]
 synonym: "Primary monoamine" RELATED [KEGG COMPOUND:]
 synonym: "R-NH2" RELATED [IUPAC:]
@@ -4670,8 +4393,8 @@ name: heterobicyclic compound
 namespace: chebi_ontology
 def: "A bicyclic compound in which at least one of the rings contains at least one skeletal heteroatom." [ANON:ANON]
 subset: 3_STAR
-synonym: "heterobicyclic compounds" EXACT IUPAC_NAME [IUPAC]
 synonym: "heterobicyclic compounds" EXACT IUPAC_NAME [IUPAC:]
+synonym: "heterobicyclic compounds" EXACT IUPAC_NAME [IUPAC]
 is_a: CHEBI:33636 ! bicyclic compound
 is_a: CHEBI:5686 ! heterocyclic compound
 
@@ -9869,11 +9592,11 @@ id: RO:0002222
 name: temporally related to
 comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
 subset: ro-eco
-property_value: curator_notes "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends." xsd:string
 property_value: http://purl.org/dc/terms/source https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1 xsd:anyURI
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
+property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends." xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 
@@ -9916,22 +9639,21 @@ transitive_over: part_of ! part_of
 id: RO:0002320
 name: evolutionarily related to
 def: "A relationship that holds via some environmental process" []
-property_value: curator_notes "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving the process of evolution." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving the process of evolution." xsd:string
 
 [Typedef]
 id: RO:0002323
 name: mereotopologically related to
 def: "A mereological relationship or a topological relationship" []
-property_value: curator_notes "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships" xsd:string
 property_value: RO:0001900 RO:0001901
 
 [Typedef]
 id: RO:0002327
 name: enables
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
-property_value: curator_notes "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
 property_value: example_of_usage "a particular instances of akt-2 enables some instance of protein kinase activity" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "catalyzes" xsd:string
@@ -9939,6 +9661,7 @@ property_value: IAO:0000118 "executes" xsd:string
 property_value: IAO:0000118 "has" xsd:string
 property_value: IAO:0000118 "is catalyzing" xsd:string
 property_value: IAO:0000118 "is executing" xsd:string
+property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
 is_a: capable_of ! capable of
 inverse_of: RO:0002333 ! enabled by
 transitive_over: has_part ! has part
@@ -9970,10 +9693,10 @@ is_a: has_participant ! has participant
 id: RO:0002410
 name: causally related to
 def: "This relation groups causal relations between material entities and causal relations between processes" []
-property_value: curator_notes "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 property_value: editor_note "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types." xsd:string
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 
 [Typedef]
 id: RO:0002428
@@ -10035,10 +9758,10 @@ def: "A relationship that holds between two entities in which the processes exec
 subset: ro-eco
 synonym: "in pairwise interaction with" EXACT []
 property_value: closeMatch http://purl.obolibrary.org/obo/MI_0914 xsd:anyURI
-property_value: curator_notes "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules." xsd:string
 property_value: editor_note "Considering relabeling as 'pairwise interacts with'" xsd:anyURI
 property_value: editor_note "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules." xsd:string
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/interaction-relations/ xsd:anyURI
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
@@ -10103,8 +9826,8 @@ is_a: RO:0002448 ! directly regulates activity of
 [Typedef]
 id: RO:0002464
 name: helper property (not for use in curation)
-property_value: curator_notes "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning." xsd:string
 
 [Typedef]
 id: RO:0002479
@@ -10149,9 +9872,9 @@ inverse_of: process_has_causal_agent ! process has causal agent
 id: RO:0002501
 name: causal relation between processes
 def: "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q." []
-property_value: curator_notes "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 is_a: RO:0002410 ! causally related to
@@ -10165,10 +9888,10 @@ property_value: seeAlso BFO:0000169
 [Typedef]
 id: RO:0002506
 name: causal relation between entities
-property_value: curator_notes "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 property_value: editor_note "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 domain: BFO:0000002 ! continuant
 range: BFO:0000002 ! continuant
 is_a: RO:0002410 ! causally related to
@@ -10386,11 +10109,11 @@ comment: Example: a spherical object has the quality of being spherical, and the
 id: RO:0017001
 name: utilizes
 def: "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y." []
-property_value: curator_notes "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
-property_value: curator_notes "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 property_value: example_of_usage "A diagnostic testing device utilizes a specimen." xsd:string
 property_value: IAO:0000117 "Asiyah Lin" xsd:string
 property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 Bill Duncan" xsd:string
+property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
+property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: capable_of has_input
 creation_date: 2021-11-08
 
@@ -10466,13 +10189,13 @@ namespace: uberon
 def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
 subset: ro-eco
 xref: RO:0002215
-property_value: curator_notes "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
 property_value: example_of_usage "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
 property_value: example_of_usage "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "has function realized in" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20123131
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/21208450
+property_value: IAO:0000232 "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000015 ! process
 is_a: capable_of_part_of ! capable of part of
@@ -10595,19 +10318,31 @@ property_value: IAO:0000111 "site of" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Typedef]
-id: curator_notes
-name: curator note
-name: curator notes
-namespace: uberon
-xref: IAO:0000232
-property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
-is_metadata_tag: true
-
-[Typedef]
 id: dc-contributor
 name: contributor
 namespace: uberon
 xref: http://purl.org/dc/elements/1.1/contributor
+is_metadata_tag: true
+
+[Typedef]
+id: dc-creator
+name: creator
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/creator
+is_metadata_tag: true
+
+[Typedef]
+id: dc-description
+name: description
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/description
+is_metadata_tag: true
+
+[Typedef]
+id: dc-title
+name: title
+namespace: uberon
+xref: http://purl.org/dc/elements/1.1/title
 is_metadata_tag: true
 
 [Typedef]
@@ -10634,20 +10369,13 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
 is_metadata_tag: true
 
 [Typedef]
-id: foaf-homepage
-name: homepage
-namespace: uberon
-xref: http://xmlns.com/foaf/0.1/homepage
-is_metadata_tag: true
-
-[Typedef]
 id: functionally_related_to
 name: functionally related to
 namespace: uberon
 def: "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities." []
 xref: RO:0002328
-property_value: curator_notes "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
 
 [Typedef]
 id: has_boundary
@@ -10678,9 +10406,9 @@ namespace: uberon
 def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
 subset: ro-eco
 xref: RO:0002180
-property_value: curator_notes "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: editor_note "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity." xsd:string
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
 is_a: has_part ! has part
@@ -11146,7 +10874,6 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002211
-property_value: curator_notes "Regulation precludes parthood; the regulatory process may not be within the regulated process." xsd:string
 property_value: editor_note "We use 'regulates' here to specifically imply control. However, many colloquial usages of the term correctly correspond to the weaker relation of 'causally upstream of or within' (aka influences). Consider relabeling to make things more explicit" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
@@ -11154,6 +10881,7 @@ property_value: IAO:0000117 "David Hill" xsd:string
 property_value: IAO:0000117 "Tanya Berardini" xsd:string
 property_value: IAO:0000119 "GO" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000232 "Regulation precludes parthood; the regulatory process may not be within the regulated process." xsd:string
 property_value: IAO:0000589 "regulates (processual)" xsd:string
 property_value: IAO:0000600 "false" xsd:boolean
 domain: BFO:0000015 ! process
@@ -11163,13 +10891,6 @@ is_transitive: true
 is_a: causally_upstream_of ! causally upstream of
 inverse_of: regulated_by ! regulated by
 transitive_over: RO:0002025 ! has effector activity
-
-[Typedef]
-id: seeAlso
-name: see also
-namespace: uberon
-xref: http://www.w3.org/2000/01/rdf-schema#seeAlso
-is_metadata_tag: true
 
 [Typedef]
 id: transitively_connected_to

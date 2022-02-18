@@ -51,8 +51,9 @@ import_group:
       make_base: TRUE
       use_gzipped: TRUE
       is_large: TRUE
+    - id: bfo
+      use_base: TRUE
 robot_java_args: '-Xmx12G'
 components:
   products:
-    - filename: bfo_classes_only.owl
     - filename: caro_bridge.owl

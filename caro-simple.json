@@ -787,44 +787,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000179",
-          "lbl": "BFO OWL specification label",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "Really of interest to developers only"
-              }
-            ],
-            "definition": {
-              "val": "Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000180",
-          "lbl": "BFO CLIF specification label",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Person:Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "Really of interest to developers only"
-              }
-            ],
-            "definition": {
-              "val": "Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/CARO_0000000",
           "lbl": "anatomical entity",
           "meta": {
@@ -2210,19 +2172,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000111",
-          "lbl": "editor preferred term",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000112",
           "lbl": "example of usage",
           "meta": {
@@ -2322,103 +2271,8 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000119",
-          "lbl": "definition source",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000232",
-          "lbl": "curator note",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-                "val": "true"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "curator_notes"
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ],
-            "xrefs": [
-              {
-                "val": "IAO:0000232"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000412",
-          "lbl": "imported from",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000600",
           "lbl": "elucidation",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000601",
-          "lbl": "has associated axiom(nl)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000602",
-          "lbl": "has associated axiom(fol)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0010000",
-          "lbl": "has axiom label",
           "meta": {
             "basicPropertyValues": [
               {
@@ -2621,6 +2475,84 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.org/dc/elements/1.1/creator",
+          "lbl": "creator",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-creator"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/creator"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/description",
+          "lbl": "description",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-description"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/description"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/title",
+          "lbl": "title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-title"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/title"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.org/dc/terms/license",
           "lbl": "license",
           "meta": {
@@ -2641,58 +2573,6 @@
             "xrefs": [
               {
                 "val": "http://purl.org/dc/terms/license"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "lbl": "see also",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-                "val": "true"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "seeAlso"
-              }
-            ],
-            "xrefs": [
-              {
-                "val": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://xmlns.com/foaf/0.1/homepage",
-          "lbl": "homepage",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
-                "val": "true"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "foaf-homepage"
-              }
-            ],
-            "xrefs": [
-              {
-                "val": "http://xmlns.com/foaf/0.1/homepage"
               }
             ]
           },
@@ -2790,18 +2670,6 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasScope",
                 "val": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
-                "val": "is defined by"
               }
             ]
           },

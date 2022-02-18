@@ -43,7 +43,7 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 $(PATTERNDIR)/definitions.owl $(COMPONENTSDIR)/bfo_classes_only.owl $(COMPONENTSDIR)/caro_bridge.owl 
+OTHER_SRC =                 $(PATTERNDIR)/definitions.owl $(COMPONENTSDIR)/caro_bridge.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 PATTERNDIR=                 ../patterns
 DOSDP_SCHEMA=                http:// # change to PURL when ready.
@@ -94,7 +94,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  pco pr go uberon ro pato chebi
+IMPORTS =  pco pr go uberon ro pato chebi bfo
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -301,8 +301,6 @@ $(COMPONENTSDIR)/%:
 
 
 
-
-
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
@@ -376,6 +374,15 @@ mirror/chebi.owl: mirror/chebi.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(URIBASE)/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz --retry 4 --max-time 400 && $(ROBOT) convert -i mirror/chebi.owl.gz -o $@.tmp.owl && \
 		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/CHEBI --axioms external --preserve-structure false --trim false -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/chebi.owl
+
+
+## ONTOLOGY: bfo
+## Copy of bfo is re-downloaded whenever source changes
+mirror/bfo.trigger: $(SRC)
+
+mirror/bfo.owl: mirror/bfo.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/BFO-ontology/BFO/master/bfo_classes_only.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/bfo.owl
 
 ALL_MIRRORS = $(patsubst %, mirror/%.owl, $(IMPORTS))
 MERGE_MIRRORS = true

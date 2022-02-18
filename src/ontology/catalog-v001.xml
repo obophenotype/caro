@@ -24,9 +24,10 @@
   <uri name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.obo" uri="imports/chebi_import.obo"/>
   
+  <uri name="http://purl.obolibrary.org/obo/caro/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/merged_import.owl" uri="imports/merged_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/components/caro_bridge.owl" uri="components/caro_bridge.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/components/bfo_classes_only.owl" uri="components/bfo_classes_only.owl"/>
+
  
   <uri name="http://purl.obolibrary.org/obo/caro/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
 </group>
