@@ -1,44 +1,29 @@
-## CARO
 
-Common Anatomy Reference Ontology
+![Build Status](https://github.com/obophenotype/caro/workflows/CI/badge.svg)
+# Common Anatomy Reference Ontology
 
-For full details see: [http://obofoundry.org/ontology/caro](http://obofoundry.org/ontology/caro)
+Description: None
 
-This GitHub repo is to manage the source files and release for CARO
+More information can be found at http://obofoundry.org/ontology/caro
 
-## Ontology 
+## Versions
 
-The ontology is stored in [src/ontology/](src/ontology/)
+### Stable release versions
 
-## Bridge Files
+The latest version of the ontology can always be found at:
 
-Bridge files to various AOs are here:
+http://purl.obolibrary.org/obo/caro.owl
 
- * [bridges/](https://github.com/obophenotype/caro/tree/master/src/ontology/bridges)
+(note this will not show up until the request has been approved by obofoundry.org)
 
-## VALIDATION
+### Editors' version
 
-We have a Jenkins job for each anatomy ontology, see the list below:
+Editors of this ontology should use the edit version, [src/ontology/caro-edit.owl](src/ontology/caro-edit.owl)
 
- * [check-caro-fbbt](http://build.berkeleybop.org/job/check-caro-fbbt)
- * [check-caro-po](http://build.berkeleybop.org/job/check-caro-po)
- * [check-caro-xao](http://build.berkeleybop.org/job/check-caro-xao)
- * [check-caro-zfa](http://build.berkeleybop.org/job/check-caro-zfa)
+## Contact
 
-These are all grouped here: http://build.berkeleybop.org/view/Anatomy/
+Please use this GitHub repository's [Issue tracker](https://github.com/obophenotype/caro/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
-If an AO has a red ball it means the combination of CARO, the AO and
-bridge axioms is formally incoherent (has unsatisfiable classes). The
-list of unsatisfiable classes is visible by clicking on the job and
-viewing the 'bridge check' artefact. Scroll to the bottom and look for
-'UNSAT's.
+## Acknowledgements
 
-To determine the reason:
-
-1. open the relevant [bridge file](https://github.com/obophenotype/caro/tree/master/src/ontology/bridges) in the repository
-2. Initiate the reasoner (HermiT recommended for most ontologies)
-3. Open the 'Nothing' node in the inferred view
-4. Select '?' to see the explanation where it says SubClassOf Nothing
-
-Additional notes: the fbbt check may be less complete, as Elk is used (HermiT is too slow with fbbt)
-
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
