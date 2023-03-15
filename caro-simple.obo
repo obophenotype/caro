@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: caro/releases/2022-02-18/caro-simple.owl
+data-version: caro/releases/2023-03-15/caro-simple.owl
 subsetdef: core "CARO2 core class"
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -10,12 +10,12 @@ subsetdef: plus "CARO2 plus class"
 subsetdef: ro-eco ""
 synonymtypedef: InChIKey ""
 synonymtypedef: systematic_synonym "" EXACT
-remark: Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendal.
+remark: Based on CARO 1.0, with modifications and additions by David Osumi-Sutherland, Chris Mungall, Ramona Walls and Melissa Haendel.
 ontology: caro/caro-simple
-property_value: dc-description "None" xsd:string
+property_value: dc-description "The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies." xsd:string
 property_value: dc-title "Common Anatomy Reference Ontology" xsd:string
-property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2022-02-18" xsd:string
+property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/
+property_value: owl:versionInfo "2023-03-15" xsd:string
 
 [Term]
 id: CARO:0000000
@@ -51,7 +51,7 @@ is_a: CARO:0000007 ! immaterial anatomical entity
 disjoint_from: CARO:0000008 ! anatomical line
 disjoint_from: CARO:0000009 ! anatomical point
 disjoint_from: CARO:0001002 ! anatomical surface
-relationship: part_of CARO:0001010 ! organism or virus or viroid
+relationship: part_of CARO:0001010 ! organism
 
 [Term]
 id: CARO:0000006
@@ -208,7 +208,7 @@ disjoint_from: CARO:0010000 ! multicellular anatomical structure
 [Term]
 id: CARO:0000041
 name: anatomical cluster
-def: "Anatomical group that has its parts adjacent to one another." [CARO:MAH, FMA:49443]
+def: "Anatomical group that has its parts adjacent to one another." [FMA:49443, https://orcid.org/0000-0001-9114-8737]
 subset: plus
 is_obsolete: true
 replaced_by: CARO:0020001
@@ -268,7 +268,7 @@ is_a: CARO:0000045 ! sequential hermaphroditic organism
 [Term]
 id: CARO:0000054
 name: anatomical group
-def: "Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.\n" [CARO:MAH]
+def: "Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.\n" [https://orcid.org/0000-0001-9114-8737]
 comment: Obsoleted because the definition is too opaque.  Also because this class was a subclass of 'anatomical structure' (CARO_0000003), but a similarly named class in the refactored caro (CARO_0020000) is a sibling of 'anatomical structure'.
 subset: core
 is_obsolete: true
@@ -301,7 +301,7 @@ name: unicellular organism
 def: "Organism that consists of a single cell for all of its life-cycle." []
 is_a: CARO:0010004 ! cellular organism
 relationship: has_component CARO:0000013 {cardinality="1"} ! cell
-relationship: has_component CARO:0000013 ! cell
+relationship: has_component CARO:0000013 {all_only="true"} ! cell
 property_value: IAO:0000118 "single-cell organism" xsd:string
 
 [Term]
@@ -456,7 +456,7 @@ subset: plus
 is_a: CARO:0000006 ! material anatomical entity
 relationship: part_of CARO:0000012 ! multicellular organism
 property_value: http://purl.obolibrary.org/obo/IAO_creation_date "10.7.2011" xsd:string
-property_value: IAO:0000117 "mah" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-9114-8737
 
 [Term]
 id: CARO:0001009
@@ -465,13 +465,14 @@ def: "Anatomical structure that surrounds an immaterial anatomical entity." []
 comment: See CARO tracker #6, but essentially Chamber has connotations of space, rather than wall: see http://en.wiktionary.org/wiki/chamber\n\nThis term is extremely abstract as a genus - it specifies no granularity at all. It could refer to a chamber in a protein complex in a membrane as easily as some big multi-tissue structure like a segment of gut.
 subset: plus
 property_value: http://purl.obolibrary.org/obo/IAO_creation_date "10.10.2011" xsd:string
-property_value: IAO:0000117 "mah" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-9114-8737
 is_obsolete: true
 
 [Term]
 id: CARO:0001010
-name: organism or virus or viroid
+name: organism
 def: "Material anatomical entity that is a member of an individual species or is a viral or viroid particle." []
+synonym: "organism or virus or viroid" EXACT []
 property_value: http://purl.obolibrary.org/obo/IAO_creation_date "9/18/11" xsd:string
 property_value: IAO:0000117 "Melissa Haendel" xsd:string
 
@@ -484,14 +485,14 @@ is_a: CARO:0001003 ! fiat anatomical boundary
 [Term]
 id: CARO:0001500
 name: neuron projection bundle segment
-def: "A fiber-shaped subdivision of a neuron projection along its long axis." [] {http://purl.obolibrary.org/obo/IAO_0000117="DOS"}
+def: "A fiber-shaped subdivision of a neuron projection along its long axis." [] {http://purl.obolibrary.org/obo/IAO_0000117="https://orcid.org/0000-0002-7073-9172"}
 is_a: CARO:0001000 ! multi-cell-part structure
 relationship: part_of CARO:0001001 ! neuron projection bundle
 
 [Term]
 id: CARO:0001501
 name: neuron projection bundle subsegment
-def: "A subdivision of a neuron projection along its long axis that is as long as it is wide (and so does not qualify as fiber-shaped)." [] {http://purl.obolibrary.org/obo/IAO_0000117="DOS"}
+def: "A subdivision of a neuron projection along its long axis that is as long as it is wide (and so does not qualify as fiber-shaped)." [] {http://purl.obolibrary.org/obo/IAO_0000117="https://orcid.org/0000-0002-7073-9172"}
 comment: This term was added in order to define fasciculation relations.  It seems unlikely that it will be used directly in curation.
 is_a: CARO:0001000 ! multi-cell-part structure
 relationship: part_of CARO:0001001 ! neuron projection bundle
@@ -519,7 +520,7 @@ is_a: CARO:0020000 ! disconnected anatomical group
 [Term]
 id: CARO:0002003
 name: clustered anatomical group
-def: "Anatomical group whose parts are close together, forming a cluster." [FBC:DOS]
+def: "Anatomical group whose parts are close together, forming a cluster." [https://orcid.org/0000-0002-7073-9172]
 comment: Not to be confused with anatomical cluster, in the FMA sense.  FMA anatomical structures are connected structures made up of heterologous parts.  For example, joints are anatomical clusters in the FMA.  The FMA definition on anatomical cluster, and the CARO1 definition that was based on it, are defined largely by exclusion.
 is_a: CARO:0020000 ! disconnected anatomical group
 
@@ -546,13 +547,13 @@ is_obsolete: true
 id: CARO:0002100
 name: anatomical system
 def: "An anatomical structure consisting of multiple cells, organs, tissues, distributed throught an organism, that act together to perform some physiological function." []
-comment: Examples include connected systems such as the circulatory system - whose elements function together to perform the function or blood circulation - and disconected systems such as the immune system. {xref="GOC:dos"}
+comment: Examples include connected systems such as the circulatory system - whose elements function together to perform the function or blood circulation - and disconected systems such as the immune system. {xref="https://orcid.org/0000-0002-7073-9172"}
 is_a: CARO:0000000 ! anatomical entity
 
 [Term]
 id: CARO:0002101
 name: disconnected anatomical system
-def: "An anatomical system consisting of multiple disconnected parts." [GOC:dos]
+def: "An anatomical system consisting of multiple disconnected parts." [https://orcid.org/0000-0002-7073-9172]
 comment: Examples include the immune system and the endocrine system.
 is_a: CARO:0002100 ! anatomical system
 relationship: has_component CARO:0000003 ! connected anatomical structure
@@ -605,14 +606,14 @@ name: cellular organism
 def: "An individual member of a clade of cellular organisms." []
 comment: A general term for organism that is agnostic about single cell vs multi-cellular.  Note that this is a subclass of 'anatomical structure', meaning that an organism must be a connected structure. For example, if I take one plant and make a rooted cutting from a it, I now have two (clonally related) organisms. 
 is_a: CARO:0000003 ! connected anatomical structure
-is_a: CARO:0001010 ! organism or virus or viroid
+is_a: CARO:0001010 ! organism
 property_value: http://purl.obolibrary.org/obo/IAO_creation_date "7.16.2011" xsd:string
-property_value: IAO:0000117 "mah" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-9114-8737
 
 [Term]
 id: CARO:0010005
 name: segment
-def: "One of a set of semi-repetitive organism subdivisions serially arranged along the anterior-posterior axis of an organism, including appendages if present." [FBC:DOS]
+def: "One of a set of semi-repetitive organism subdivisions serially arranged along the anterior-posterior axis of an organism, including appendages if present." [https://orcid.org/0000-0002-7073-9172]
 synonym: "metamere" EXACT []
 is_a: CARO:0000032 ! organism subdivision
 disjoint_from: CARO:0010006 ! tagma
@@ -674,7 +675,7 @@ is_a: CARO:0010000 ! multicellular anatomical structure
 [Term]
 id: CARO:0020002
 name: cell cluster
-def: "A cluster of cells, largely surrounded by a morphological boundary." [] {comment="GOC:dos"}
+def: "A cluster of cells, largely surrounded by a morphological boundary." [] {comment="https://orcid.org/0000-0002-7073-9172"}
 is_a: CARO:0010000 ! multicellular anatomical structure
 
 [Term]
@@ -682,7 +683,7 @@ id: CARO:0020003
 name: cellular anatomical structure
 def: "An anatomical structure consisting of one or more cells." []
 is_a: CARO:0000006 ! material anatomical entity
-property_value: created_by "dos" xsd:string
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2018-09-28T14:20:19Z
 
 [Term]
@@ -717,7 +718,6 @@ id: bearer_of
 name: bearer of
 name: has characteristic
 namespace: external
-namespace: uberon
 def: "Inverse of characteristic_of" []
 xref: RO:0000053
 property_value: editor_note "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist." xsd:string
@@ -728,13 +728,6 @@ property_value: IAO:0000118 "bearer_of" xsd:string
 property_value: IAO:0000118 "is bearer of" xsd:string
 property_value: RO:0001900 RO:0001901
 is_inverse_functional: true
-
-[Typedef]
-id: dc-contributor
-name: contributor
-namespace: uberon
-xref: http://purl.org/dc/elements/1.1/contributor
-is_metadata_tag: true
 
 [Typedef]
 id: dc-creator
@@ -769,7 +762,6 @@ id: editor_note
 name: editor note
 namespace: uberon
 xref: IAO:0000116
-property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
 is_metadata_tag: true
 
 [Typedef]
@@ -777,13 +769,11 @@ id: example_of_usage
 name: example of usage
 namespace: uberon
 xref: IAO:0000112
-property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
 is_metadata_tag: true
 
 [Typedef]
 id: has_boundary
 name: has 2D boundary
-name: has boundary
 name: has_boundary
 namespace: uberon
 def: "a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity" []
@@ -791,7 +781,7 @@ xref: RO:0002002
 property_value: editor_note "A 2D boundary may have holes and gaps, but it must be a single connected entity, not an aggregate of several disconnected parts." xsd:string
 property_value: editor_note "Although the boundary is two-dimensional, it exists in three-dimensional space and thus has a 3D shape." xsd:string
 property_value: example_of_usage "my body has 2D boundary the surface of my skin" xsd:string
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "has boundary" xsd:string
 property_value: IAO:0000118 "has_2D_boundary" xsd:string
 property_value: RO:0001900 RO:0001901
@@ -867,7 +857,7 @@ property_value: RO:0040042 BFO:0000020
 property_value: RO:0040042 BFO:0000031
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
-property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
+property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
 is_transitive: true
 inverse_of: has_part ! has part
 

@@ -49,10 +49,9 @@ import_group:
       use_base: TRUE
     - id: chebi
       make_base: TRUE
-      use_gzipped: TRUE
-      is_large: TRUE
+      mirror_from: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
     - id: bfo
-      use_base: TRUE
+      make_base: TRUE
 robot_java_args: '-Xmx12G'
 components:
   products:
