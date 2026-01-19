@@ -49,10 +49,14 @@ import_group:
       use_base: TRUE
     - id: chebi
       make_base: TRUE
-      mirror_from: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
+      mirror_from: http://purl.obolibrary.org/obo/upheno/chebi_slim.owl
     - id: bfo
       make_base: TRUE
 robot_java_args: '-Xmx12G'
 components:
   products:
     - filename: caro_bridge.owl
+
+git_main_branch: master
+workflows:
+  - qc

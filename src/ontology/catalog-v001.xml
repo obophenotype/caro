@@ -1,34 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/pco_import.owl" uri="imports/pco_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/pco_import.obo" uri="imports/pco_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/pr_import.owl" uri="imports/pr_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/pr_import.obo" uri="imports/pr_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/go_import.owl" uri="imports/go_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/go_import.obo" uri="imports/go_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/pato_import.obo" uri="imports/pato_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.obo" uri="imports/chebi_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/caro/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/imports/merged_import.owl" uri="imports/merged_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/caro/components/caro_bridge.owl" uri="components/caro_bridge.owl"/>
-
- 
-  <uri name="http://purl.obolibrary.org/obo/caro/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
-</group>
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <group id="odk-managed-catalog" prefer="public">
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/merged_import.owl" uri="imports/merged_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/components/caro_bridge.owl" uri="components/caro_bridge.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/patterns/definitions.owl" uri="../patterns/definitions.owl" />
+  </group>
+  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public">
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/pco_import.owl" uri="imports/pco_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/pco_import.obo" uri="imports/pco_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/pr_import.owl" uri="imports/pr_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/pr_import.obo" uri="imports/pr_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/go_import.owl" uri="imports/go_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/go_import.obo" uri="imports/go_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/uberon_import.owl" uri="imports/uberon_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/uberon_import.obo" uri="imports/uberon_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/ro_import.owl" uri="imports/ro_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/ro_import.obo" uri="imports/ro_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/pato_import.owl" uri="imports/pato_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/pato_import.obo" uri="imports/pato_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.owl" uri="imports/chebi_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/chebi_import.obo" uri="imports/chebi_import.obo" />
+    <uri name="http://purl.obolibrary.org/obo/caro/imports/bfo_import.owl" uri="imports/bfo_import.owl" />
+  </group>
 </catalog>
